@@ -1,0 +1,158 @@
+---
+const categories = ["todos", "desconectar", "caseras", "competitivas", "nocturnas"];
+---
+
+<div
+  id="cart-container"
+  class="flex flex-row flex-wrap items-center justify-center m-4 w-[500px] h-[500px]"
+>
+...
+</div>
+
+<div class="flex flex-row items-start justify-center min-h-[250px] m-4">
+  <div>
+    <button
+      id="randomize-btn"
+      class="text-white bg-coral hover:bg-gold focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center m-3"
+    >
+      Busca tu proximo panorama
+    </button>
+  </div>
+
+  <div>
+    <button
+      id="dropdownCheckboxButton"
+      data-dropdown-toggle="dropdownDefaultCheckbox"
+      class="text-white bg-secondaryRose hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center m-3 inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      type="button"
+      >Tipos de panorama <svg
+        class="w-2.5 h-2.5 ms-3"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="m1 1 4 4 4-4"></path>
+      </svg>
+    </button>
+
+    <div
+      id="dropdownDefaultCheckbox"
+      class="z-10 hidden w-48 bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700 dark:divide-gray-600"
+    >
+      <ul
+        class="p-3 space-y-3 text-sm text-gray-700 dark:text-gray-200"
+        aria-labelledby="dropdownCheckboxButton"
+      >
+        {
+          categories.map((category, index) => <li>
+              <div class="flex items-center">
+                <input
+                  id={`checkbox-item-${index}`}
+                  type="checkbox"
+                  value={category}
+                  class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-700 dark:focus:ring-offset-gray-700 focus:ring-2 dark:bg-gray-600 dark:border-gray-500"
+                />
+                <label
+                  for={`checkbox-item-${index}`}
+                  class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                >
+                  {category.charAt(0).toUpperCase() + category.slice(1)}
+                </label>
+              </div>
+            </li>)
+        }
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script>
+  import { data } from "../data/data.js";
+
+  const dropdownCheckboxButton = document.getElementById(
+    "dropdownCheckboxButton"
+  );
+  const dropdownDefaultCheckbox = document.getElementById(
+    "dropdownDefaultCheckbox"
+  );
+
+  dropdownCheckboxButton.addEventListener("click", () => {
+    dropdownDefaultCheckbox.classList.toggle("hidden");
+  });
+
+  // block all checkboxes if todos is checked
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const todosCheckbox = Array.from(checkboxes).find(
+      (checkbox) => checkbox.value === "todos"
+    );
+
+    todosCheckbox.addEventListener("change", () => {
+      if (todosCheckbox.checked) {
+        checkboxes.forEach((checkbox) => {
+          if (checkbox.value !== "todos") {
+            checkbox.checked = false;
+            checkbox.disabled = true;
+          }
+        });
+      } else {
+        checkboxes.forEach((checkbox) => {
+          checkbox.disabled = false;
+        });
+      }
+    });
+
+  const randomizeBtn = document.getElementById("randomize-btn");
+
+  // filter data by checkbox value
+  const filterData = (data) => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    
+    const checkedCheckboxes = Array.from(checkboxes).filter(
+      (checkbox) => checkbox.checked
+    );
+    const checkedValues = checkedCheckboxes.map((checkbox) => checkbox.value);
+
+    if (checkedValues.length === 0) return data;
+    if (checkedValues.includes("todos")) return data;
+
+    return data.filter((item) => checkedValues.includes(item.category));
+  };
+
+  randomizeBtn.addEventListener("click", () => {
+    const filteredData = filterData(data);
+    const randomItem = filteredData[Math.floor(Math.random() * filteredData.length)];
+    const card = document.querySelector("#cart-container");
+
+    randomItem?
+      card.innerHTML = `
+                <div class="min-h-[300px] bg-white border border-gray-200 rounded-lg shadow">
+                    <a href="#">
+                        <img class="w-[100%] h-[200px]" src=${randomItem.image} />
+                    </a>
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">${randomItem.name}</h5>
+                        </a>
+                        <div class="flex flex-col justify-between">
+                            <p class="mb-3 font-normal text-gray-700">${randomItem.location}</p>
+                            <p class="mb-3 font-normal text-green-700">${
+                              typeof randomItem.price == "object"
+                                ? new Intl.NumberFormat("es-cl", {
+                                    style: "currency",
+                                    currency: "clp",
+                                  }).format(randomItem.price.higher)
+                                : randomItem.price
+                            }</p>
+                        </div>
+
+                    </div>
+                </div>`
+      : '<p>Sin datos</p>'
+    });
+</script>
