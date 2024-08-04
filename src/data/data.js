@@ -27,20 +27,19 @@ export const data = [
     {
         "name": "Cafetería",
         "image": "https://lacafeteriatalca.cl/wp-content/uploads/2020/08/carrusel1.jpg",
-        "category": "cafeteria",
+        "category": "desconectar",
         "description": "Tomar un café juntos en una cafetería es una opción sencilla y relajada para una cita. Pueden disfrutar de una conversación tranquila y compartir momentos especiales mientras degustan una deliciosa bebida caliente o fría.",
     },
     {
         "name": "Heladería",
         "image": "https://mejisa.com/wp-content/uploads/2021/11/heladeria.jpg",
-        "category": "cafeteria",
+        "category": "desconectar",
         "description": "Ir a una heladería es una opción refrescante y dulce para una cita. Pueden disfrutar de un helado juntos en un ambiente relajado y cómodo, y compartir risas y buenos momentos mientras degustan sabores deliciosos y variados.",
     },
-    //Conciertos
     {
         "name": "Concierto en vivo",
         "image": "https://fotografias.larazon.es/clipping/cmsimages01/2023/11/17/B509E9E7-1C8A-4542-8074-5554F9C9D421/conciertos_98.jpg?crop=1120,630,x41,y0&width=1900&height=1069&optimize=low&format=webply",
-        "category": "conciertos",
+        "category": "desconectar",
         "description": "Ir a un concierto en vivo es una opción emocionante y divertida para una cita. Pueden disfrutar de la música en directo, bailar y cantar juntos, y compartir la emoción y la energía del espectáculo en un ambiente festivo y animado.",
     },
     //Nocturnas

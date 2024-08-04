@@ -14,14 +14,17 @@ import Layout from "../layouts/Layout.astro";
           id="desconectar-option"
           value="desconectar"
           class="hidden peer"
-          required=""
         />
         <label
-          for="flowbite-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+          for="desconectar-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img src="../../public/img/psychology.png" class="w-[32px] h-auto" alt="desconectar"/>
+            <img
+              src="/public/img/psychology.png"
+              class="w-[32px] h-auto"
+              alt="desconectar"
+            />
             <p class="ml-4 text-lg text-center font-semibold">Desconectar</p>
           </div>
         </label>
@@ -34,11 +37,15 @@ import Layout from "../layouts/Layout.astro";
           class="hidden peer"
         />
         <label
-          for="flowbite-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+          for="caseras-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img src="../../public/img/home.png" class="w-[32px] h-auto" alt="home"/>
+            <img
+              src="/public/img/home.png"
+              class="w-[32px] h-auto"
+              alt="home"
+            />
             <p class="ml-4 text-lg font-semibold">Caseras</p>
           </div>
         </label>
@@ -51,11 +58,15 @@ import Layout from "../layouts/Layout.astro";
           class="hidden peer"
         />
         <label
-          for="flowbite-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+          for="competitivas-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img src="../../public/img/running.png" class="w-[32px] h-auto" alt="competitivas"/>
+            <img
+              src="/public/img/running.png"
+              class="w-[32px] h-auto"
+              alt="competitivas"
+            />
             <p class="ml-4 text-lg font-semibold">Competitivas</p>
           </div>
         </label>
@@ -68,11 +79,15 @@ import Layout from "../layouts/Layout.astro";
           class="hidden peer"
         />
         <label
-          for="flowbite-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+          for="nocturnas-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img src="../../public/img/night-mode.png" class="w-[32px] h-auto" alt="nocturnas"/>
+            <img
+              src="/public/img/night-mode.png"
+              class="w-[32px] h-auto"
+              alt="nocturnas"
+            />
             <p class="ml-4 text-lg font-semibold">Nocturnas</p>
           </div>
         </label>
@@ -89,8 +104,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </section>
 
-  <section id="card-container" class="mx-auto w-4/5">
-  </section>
+  <section id="card-container" class="mx-auto w-4/5"></section>
 </Layout>
 
 <script>
@@ -113,7 +127,8 @@ import Layout from "../layouts/Layout.astro";
 
   randomizeBtn.addEventListener("click", () => {
     const filteredData = filterData(data);
-    const randomItem = filteredData[Math.floor(Math.random() * filteredData.length)];
+    const randomItem =
+      filteredData[Math.floor(Math.random() * filteredData.length)];
     const card = document.querySelector("#card-container");
 
     card.innerHTML = `
