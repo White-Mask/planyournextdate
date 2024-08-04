@@ -1,21 +1,144 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import RandomizeBtn from "../components/RandomizeBtn.astro";
 ---
 
 <Layout title="Plan your next date">
-  <div class="flex flex-col justify-center items-center">
-    
-		<div class="mt-10">
-			<h1 class="text-4xl font-bold text-center text-gray-900 m-2">
-				¡Plan your next date!
-			</h1>
-			<p class="text-lg text-center text-gray-700 m-2">
-				Un generador de panoramas aleatorios
-			</p>
-		</div>
+  <section class="mx-auto p-5 w-4/5 bg-[#f5ebd9] rounded-lg mt-8">
+    <h3 class="mb-5 text-md font-medium text-gray-500">
+      Selecciona uno o varios tipos:
+    </h3>
+    <ul class="grid w-full gap-6 md:grid-cols-3">
+      <li>
+        <input
+          type="checkbox"
+          id="desconectar-option"
+          value="desconectar"
+          class="hidden peer"
+          required=""
+        />
+        <label
+          for="flowbite-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+        >
+          <div class="flex items-center">
+            <img src="../../public/img/psychology.png" class="w-[32px] h-auto" alt="desconectar"/>
+            <p class="ml-4 text-lg text-center font-semibold">Desconectar</p>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="caseras-option"
+          value="caseras"
+          class="hidden peer"
+        />
+        <label
+          for="flowbite-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+        >
+          <div class="flex items-center">
+            <img src="../../public/img/home.png" class="w-[32px] h-auto" alt="home"/>
+            <p class="ml-4 text-lg font-semibold">Caseras</p>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="competitivas-option"
+          value="competitivas"
+          class="hidden peer"
+        />
+        <label
+          for="flowbite-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+        >
+          <div class="flex items-center">
+            <img src="../../public/img/running.png" class="w-[32px] h-auto" alt="competitivas"/>
+            <p class="ml-4 text-lg font-semibold">Competitivas</p>
+          </div>
+        </label>
+      </li>
+      <li>
+        <input
+          type="checkbox"
+          id="nocturnas-option"
+          value="nocturnas"
+          class="hidden peer"
+        />
+        <label
+          for="flowbite-option"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-500 bg-white border-2 border-gray-200 rounded-lg cursor-pointer dark:hover:text-gray-300 dark:border-gray-700 peer-checked:border-blue-600 hover:text-gray-600 dark:peer-checked:text-gray-300 peer-checked:text-gray-600 hover:bg-gray-50"
+        >
+          <div class="flex items-center">
+            <img src="../../public/img/night-mode.png" class="w-[32px] h-auto" alt="nocturnas"/>
+            <p class="ml-4 text-lg font-semibold">Nocturnas</p>
+          </div>
+        </label>
+      </li>
+    </ul>
 
+    <div class="w-full flex justify-center mt-8">
+      <button
+        id="randomize-btn"
+        class="text-white bg-[#FF6B6B] hover:bg-[rgb(185,107,107)] focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+      >
+        Busca panorama
+      </button>
+    </div>
+  </section>
 
-		<RandomizeBtn class="container" />
-	</div>
+  <section id="card-container" class="mx-auto w-4/5">
+  </section>
 </Layout>
+
+<script>
+  import { data } from "../data/data.js";
+
+  const randomizeBtn = document.getElementById("randomize-btn");
+
+  const filterData = (data) => {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+
+    const checkedCheckboxes = Array.from(checkboxes).filter(
+      (checkbox) => checkbox.checked
+    );
+    const checkedValues = checkedCheckboxes.map((checkbox) => checkbox.value);
+
+    if (checkedValues.length === 0) return data;
+
+    return data.filter((item) => checkedValues.includes(item.category));
+  };
+
+  randomizeBtn.addEventListener("click", () => {
+    const filteredData = filterData(data);
+    const randomItem = filteredData[Math.floor(Math.random() * filteredData.length)];
+    const card = document.querySelector("#card-container");
+
+    card.innerHTML = `
+	<div
+      class="relative my-8 rounded-lg border border-gray-200 shadow bg-white"
+    >
+      <img
+        class="object-cover w-full rounded-t-lg h-96"
+        src=${randomItem.image}
+      />
+      <p
+        class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-coral"
+      >
+        ${randomItem.category.toUpperCase()[0].toUpperCase() + randomItem.category.slice(1)}
+      </p>
+      <div class="p-5">
+        <p class="mb-2 text-2xl font-bold tracking-tight text-gray-900">
+          ${randomItem.name}
+        </p>
+
+        <p class="mb-3 font-normal text-gray-700">
+          ${randomItem.description}
+        </p>
+      </div>
+    </div>
+	`;
+  });
+</script>

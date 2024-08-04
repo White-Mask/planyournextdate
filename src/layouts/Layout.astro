@@ -1,7 +1,8 @@
 ---
-import Footer from '../components/Footer.astro';
+import Footer from "../components/Footer.astro";
+import '@fontsource-variable/montserrat';
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -9,31 +10,32 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html class="bg-cream" lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<main>
-			<slot />
-		</main>
-		<Footer/>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="flex flex-col min-h-screen w-full m-0 p-0">
+    <section class="w-full py-8 bg-[#333333]">
+      <h1 class="sm:text-4xl text-3xl font-bold text-center text-white m-2">
+        ¡Plan your next date!
+      </h1>
+      <p class="text-md text-center text-gray-200 m-2">
+        Generador de panoramas aleatorios
+      </p>
+    </section>
+    <main class="my-auto">
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
 <style is:global>
-	:root {
-	}
-	html {
-		font-family: system-ui, sans-serif;
-	}
-	body {
-		margin: 0;
-		padding: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
+  :root {
+  }
+  html {
+    font-family: 'Montserrat Variable', system-ui, sans-serif;
+  }
 </style>
