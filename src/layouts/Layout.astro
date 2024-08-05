@@ -22,16 +22,20 @@ const { title, description, canonical } = Astro.props;
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="icon" type="image/png" href="/favicon.svg" />
+    <link rel="icon" type="image/png" href="/logo.ico" />
   </head>
   <body class="flex flex-col min-h-screen w-full m-0 p-0">
-    <section class="w-full py-8 bg-[#333333]">
-      <h1 class="sm:text-4xl text-3xl font-bold text-center text-white m-2">
-        ¡Plan your next date!
-      </h1>
-      <p class="text-md text-center text-gray-200 m-2">
-        Generador de panoramas aleatorios
-      </p>
+    <section class="flex flex-row py-8 md:pl-16 pl-14 bg-[#eb1c63]">
+      <img
+        src="/favicon.webp"
+        class="w-[120px] h-[86px]"
+        alt="Plan Your Next Date"
+      />
+      <div class="relative">
+        <h1 class="absolute w-44 text-xl font-bold text-white left-[-16px] top-5">
+          PLAN YOURN <br> NEXT DATE
+        </h1>
+      </div>
     </section>
     <main class="my-auto">
       <slot />

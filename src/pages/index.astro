@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro";
   canonical="https://planyournextdate.xyz"
 >
   <section class="mx-auto p-5 w-4/5 bg-[#f5ebd9] rounded-lg my-8">
-    <h3 class="mb-5 text-md font-medium text-gray-500">
+    <h3 class="mb-5 text-md font-bold text-gray-700">
       Selecciona uno o varios tipos:
     </h3>
     <ul class="grid w-full gap-6 md:grid-cols-3">
@@ -21,13 +21,13 @@ import Layout from "../layouts/Layout.astro";
         />
         <label
           for="desconectar-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
-              src="/img/home.webp"
+              src="/img/psychology.webp"
               class="w-[32px] h-[32px]"
-              alt="desconectar"
+              alt="Opción desconectar"
             />
             <p class="ml-4 text-lg text-center font-semibold">Desconectar</p>
           </div>
@@ -42,13 +42,13 @@ import Layout from "../layouts/Layout.astro";
         />
         <label
           for="caseras-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
-              src="/img/psychology.webp"
+              src="/img/home.webp"
               class="w-[32px] h-[32px]"
-              alt="home"
+              alt="Opción caseras"
             />
             <p class="ml-4 text-lg font-semibold">Caseras</p>
           </div>
@@ -63,13 +63,13 @@ import Layout from "../layouts/Layout.astro";
         />
         <label
           for="competitivas-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
               src="/img/running.webp"
               class="w-[32px] h-[32px]"
-              alt="competitivas"
+              alt="Opción competitivas"
             />
             <p class="ml-4 text-lg font-semibold">Competitivas</p>
           </div>
@@ -84,13 +84,13 @@ import Layout from "../layouts/Layout.astro";
         />
         <label
           for="nocturnas-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-blue-600 hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between w-full p-5 text-gray-600 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
               src="/img/night-mode.webp"
               class="w-[32px] h-[32px]"
-              alt="nocturnas"
+              alt="Opción nocturnas"
             />
             <p class="ml-4 text-lg font-semibold">Nocturnas</p>
           </div>
@@ -101,9 +101,9 @@ import Layout from "../layouts/Layout.astro";
     <div class="w-full flex justify-center mt-8">
       <button
         id="randomize-btn"
-        class="text-white bg-[#FF6B6B] hover:bg-[rgb(185,107,107)] focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+        class="text-white bg-[#eb1c63] hover:bg-[#ac1444] focus:outline-none font-bold rounded-lg text-md p-10 py-4 text-center"
       >
-        Busca panorama
+        Generar panorama aleatorio ✨
       </button>
     </div>
   </section>
@@ -144,7 +144,7 @@ import Layout from "../layouts/Layout.astro";
         src=${randomItem.image}
       />
       <p
-        class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-coral"
+        class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]"
       >
         ${randomItem.category.toUpperCase()[0].toUpperCase() + randomItem.category.slice(1)}
       </p>
@@ -159,5 +159,6 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 	`;
+  randomizeBtn.textContent = "Generar otro panorama aleatorio ✨";
   });
 </script>
