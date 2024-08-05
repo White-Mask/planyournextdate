@@ -50,7 +50,7 @@ export const data = [
     },
     {
         "name": "Parques de Camas Elásticas",
-        "image": "https://www.valenciabonita.es/wp-content/uploads/2017/10/22713257_1916811401916736_1083680144797393352_o.jpg",
+        "image": "https://coneypark.cl/wp-content/uploads/2022/03/jump-4.jpg",
         "category": "desconectar",
         "description": "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
     },
