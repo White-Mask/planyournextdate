@@ -19,6 +19,30 @@ export const data = [
         "description": "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
     },
     {
+        "name": "Visita a un parque de atracciones",
+        "image": "https://dfmas.df.cl/dfmas/site/artic/20220114/imag/foto_0000001220220114154948/Copia-de-Fantasilandia-_3.jpg",
+        "category": "desconectar",
+        "description": "Ir a un parque de atracciones es una opción emocionante y divertida para una cita. Pueden disfrutar de las atracciones, los juegos y las actividades juntos, compartir risas y emociones fuertes, y crear recuerdos inolvidables en un ambiente festivo y animado.",
+    },
+    {
+        "name": "Zoológico",
+        "image": "https://finde.latercera.com/wp-content/uploads/2020/09/Zologico-ok-ok.jpg",
+        "category": "desconectar",
+        "description": "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
+    },
+    {
+        "name": "Centro de entretenimiento",
+        "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/09/6e/61/ven-a-divertirte.jpg?w=1100&h=-1&s=1",
+        "category": "desconectar",
+        "description": "Visitar un centro de entretenimiento es una opción versátil y divertida para una cita. Pueden disfrutar de una variedad de actividades como bolos, juegos de arcade, mini golf, karaoke, entre otros, y compartir risas y buenos momentos juntos en un ambiente animado y entretenido.",
+    },
+    {
+        "name": "Parques de Camas Elásticas",
+        "image": "https://www.valenciabonita.es/wp-content/uploads/2017/10/22713257_1916811401916736_1083680144797393352_o.jpg",
+        "category": "desconectar",
+        "description": "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
+    },
+    {
         "name": "Cine",
         "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
         "category": "desconectar",
@@ -41,6 +65,18 @@ export const data = [
         "image": "https://fotografias.larazon.es/clipping/cmsimages01/2023/11/17/B509E9E7-1C8A-4542-8074-5554F9C9D421/conciertos_98.jpg?crop=1120,630,x41,y0&width=1900&height=1069&optimize=low&format=webply",
         "category": "desconectar",
         "description": "Ir a un concierto en vivo es una opción emocionante y divertida para una cita. Pueden disfrutar de la música en directo, bailar y cantar juntos, y compartir la emoción y la energía del espectáculo en un ambiente festivo y animado.",
+    },
+    {
+        "name": "Baño termal o tinaja",
+        "image": "https://sdlodge.cl/wp-content/uploads/2023/05/TINAJAS-EDITADO-1024x874.jpg",
+        "category": "desconectar",  
+        "description": "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
+    },
+    {
+        "name": "Masaje",
+        "image": "https://villagrouploreto.s3.amazonaws.com/uploads/article/cover/395/beneficios-de-recibir-un-masaje-en-pareja.jpg",
+        "category": "desconectar",
+        "description": "Recibir un masaje juntos es una opción relajante y reconfortante para una cita. Pueden disfrutar de un masaje relajante, descontracturante o terapéutico, y compartir momentos de bienestar y cuidado personal en un ambiente tranquilo y acogedor.",
     },
     //Nocturnas
     {
