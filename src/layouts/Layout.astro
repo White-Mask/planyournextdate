@@ -1,6 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
-import '@fontsource-variable/montserrat';
+import "@fontsource-variable/montserrat";
 interface Props {
   title: string;
   description: string;
@@ -18,24 +18,32 @@ const { title, description, canonical } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile" />
+    <meta
+      name="keywords"
+      content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile"
+    />
     <meta name="robots" content="index, follow" />
+    <meta name="google-site-verification" content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc" />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="icon" type="image/png" href="/logo.ico" />
   </head>
   <body class="flex flex-col min-h-screen w-full m-0 p-0">
-    <section class="flex flex-row py-8 md:pl-16 pl-14 bg-[#eb1c63]">
-      <img
-        src="/favicon.webp"
-        class="w-[120px] h-[86px]"
-        alt="Plan Your Next Date"
-      />
-      <div class="relative">
-        <h1 class="absolute w-44 text-xl font-bold text-white left-[-16px] top-5">
-          PLAN YOURN <br> NEXT DATE
-        </h1>
-      </div>
+    <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
+      <a href="/" class="flex flex-row">
+        <img
+          src="/favicon.webp"
+          class="w-[120px] h-[86px]"
+          alt="Plan Your Next Date"
+        />
+        <div class="relative">
+          <h1
+            class="absolute w-44 text-xl font-bold text-white left-[-16px] top-5"
+          >
+            PLAN YOURN <br /> NEXT DATE
+          </h1>
+        </div>
+      </a>
     </section>
     <main class="my-auto">
       <slot />
@@ -47,6 +55,6 @@ const { title, description, canonical } = Astro.props;
   :root {
   }
   html {
-    font-family: 'Montserrat Variable', system-ui, sans-serif;
+    font-family: "Montserrat Variable", system-ui, sans-serif;
   }
 </style>
