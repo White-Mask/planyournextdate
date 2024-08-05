@@ -59,7 +59,7 @@ export const data = [
         "image": "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
         "category": "desconectar",
         "description": "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
-    }
+    },
     {
         "name": "Cine",
         "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
