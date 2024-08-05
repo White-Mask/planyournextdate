@@ -55,6 +55,12 @@ export const data = [
         "description": "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
     },
     {
+        "name": "Teatro",
+        "image": "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
+        "category": "desconectar",
+        "description": "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
+    }
+    {
         "name": "Cine",
         "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
         "category": "desconectar",
