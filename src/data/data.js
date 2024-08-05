@@ -19,6 +19,18 @@ export const data = [
         "description": "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
     },
     {
+        "name": "Taller de pintura",
+        "image": "https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2024/02/04113051/PAINT_IN_THE_DARK_MK1_AV-82_nznbjq_Optimized_Version_jn4yxc.jpg",
+        "category": "desconectar",
+        "description": "Tomar un taller de pintura juntos es una opción creativa y divertida para una cita. Pueden explorar su lado artístico, experimentar con colores y formas, y compartir momentos de inspiración y creatividad en un ambiente relajado y estimulante.",
+    },
+    {
+        "name": "Visita a un jardín botánico",
+        "image": "https://www.ed.cl/wp-content/uploads/2023/11/herbarium-1.jpg",
+        "category": "desconectar",
+        "description": "Visitar un jardín botánico es una opción relajante y enriquecedora para una cita. Pueden pasear entre plantas y flores, disfrutar de la belleza de la naturaleza y compartir momentos de tranquilidad y armonía en un entorno verde y sereno.",
+    },
+    {
         "name": "Visita a un parque de atracciones",
         "image": "https://dfmas.df.cl/dfmas/site/artic/20220114/imag/foto_0000001220220114154948/Copia-de-Fantasilandia-_3.jpg",
         "category": "desconectar",
@@ -74,9 +86,15 @@ export const data = [
     },
     {
         "name": "Masaje",
-        "image": "https://villagrouploreto.s3.amazonaws.com/uploads/article/cover/395/beneficios-de-recibir-un-masaje-en-pareja.jpg",
+        "image": "https://shadhar.cl/wp-content/uploads/2022/11/parejas-4.jpg",
         "category": "desconectar",
         "description": "Recibir un masaje juntos es una opción relajante y reconfortante para una cita. Pueden disfrutar de un masaje relajante, descontracturante o terapéutico, y compartir momentos de bienestar y cuidado personal en un ambiente tranquilo y acogedor.",
+    },
+    {
+        "name": "Planetario",
+        "image": "https://planetariochile.cl/wp-content/uploads/2024/06/Planetario-USACH-04.png",
+        "category": "desconectar",
+        "description": "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
     },
     //Nocturnas
     {
