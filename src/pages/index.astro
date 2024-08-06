@@ -7,21 +7,26 @@ import Layout from "../layouts/Layout.astro";
   description="En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad."
   canonical="https://planyournextdate.xyz"
 >
-  <section class="mx-auto p-5 w-4/5 bg-[#f5ebd9] rounded-lg my-8">
-    <h3 class="mb-5 text-md font-bold text-gray-700">
-      Selecciona uno o varios tipos:
-    </h3>
-    <ul class="grid w-full gap-6 md:grid-cols-3">
-      <li>
+  <section class="w-full max-w-fit h-full mx-8 p-5 bg-[#f5ebd9] rounded-lg my-8">
+    <h2 class="mb-1 text-lg font-bold text-gray-700">Filtros</h2>
+    <p class="mb-7 text-sm text-gray-500">
+      Selecciona de panorama:
+    </p>
+    <!--items en el centro -->
+    <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
         <input
           type="checkbox"
           id="naturaleza-option"
           value="naturaleza"
           class="hidden peer"
         />
+       <div class="relative">
+        <div id="circle-naturaleza" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+       </div>
         <label
           for="naturaleza-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
@@ -29,20 +34,25 @@ import Layout from "../layouts/Layout.astro";
               class="w-[32px] h-[32px]"
               alt="Opción naturaleza"
             />
-            <p class="ml-4 text-lg text-center font-semibold">Naturaleza</p>
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-67px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Naturaleza</p>
+            </div>
           </div>
         </label>
       </li>
-      <li>
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
         <input
           type="checkbox"
           id="cultura-option"
           value="cultura"
           class="hidden peer"
         />
+        <div class="relative">
+          <div id="circle-cultura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+         </div>
         <label
           for="cultura-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
@@ -50,20 +60,25 @@ import Layout from "../layouts/Layout.astro";
               class="w-[32px] h-[32px]"
               alt="Opción cultura"
             />
-            <p class="ml-4 text-lg font-semibold">Cultura</p>
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-49px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Cultura</p>
+            </div>
           </div>
         </label>
       </li>
-      <li>
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
         <input
           type="checkbox"
           id="aventura-option"
           value="aventura"
           class="hidden peer"
         />
+        <div class="relative">
+          <div id="circle-aventura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+         </div>
         <label
           for="aventura-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
@@ -71,20 +86,25 @@ import Layout from "../layouts/Layout.astro";
               class="w-[32px] h-[32px]"
               alt="Opción aventura"
             />
-            <p class="ml-4 text-lg font-semibold">Aventura</p>
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-58px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Aventura</p>
+            </div>
           </div>
         </label>
       </li>
-      <li>
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
         <input
           type="checkbox"
           id="nocturnas-option"
           value="nocturnas"
           class="hidden peer"
         />
+        <div class="relative">
+          <div id="circle-nocturnas" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+         </div>
         <label
           for="nocturnas-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
@@ -92,41 +112,25 @@ import Layout from "../layouts/Layout.astro";
               class="w-[32px] h-[32px]"
               alt="Opción nocturnas"
             />
-            <p class="ml-4 text-lg font-semibold">Nocturnas</p>
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-66px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Nocturnas</p>
+            </div>
           </div>
         </label>
       </li>
-      <li>
-        <input
-          type="checkbox"
-          id="desconectar-option"
-          value="desconectar"
-          class="hidden peer"
-        />
-        <label
-          for="desconectar-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img
-              src="/img/psychology.webp"
-              class="w-[32px] h-[32px]"
-              alt="Opción desconectar"
-            />
-            <p class="ml-4 text-lg font-semibold">Relajación</p>
-          </div>
-        </label>
-      </li>
-      <li>
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
         <input
           type="checkbox"
           id="caseras-option"
           value="caseras"
           class="hidden peer"
         />
+        <div class="relative">
+          <div id="circle-caseras" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+         </div>
         <label
           for="caseras-option"
-          class="inline-flex items-center justify-between w-full p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-lg cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
             <img
@@ -134,7 +138,35 @@ import Layout from "../layouts/Layout.astro";
               class="w-[32px] h-[32px]"
               alt="Opción caseras"
             />
-            <p class="ml-4 text-lg font-semibold">Caseras</p>
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-52px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Caseras</p>
+            </div>
+          </div>
+        </label>
+      </li>
+      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[260px] mb-8">
+        <input
+          type="checkbox"
+          id="desconectar-option"
+          value="desconectar"
+          class="hidden peer"
+        />
+        <div class="relative">
+          <div id="circle-desconectar" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+         </div>
+        <label
+          for="desconectar-option"
+          class="inline-flex items-center justify-between lg:w-[260px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
+        >
+          <div class="flex items-center">
+            <img
+              src="/img/psychology.webp"
+              class="w-[32px] h-[32px]"
+              alt="Opción desconectar"
+            />
+            <div class="relative w-full">
+              <p class="absolute top-10 left-[-76px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Desconectar</p>
+            </div>
           </div>
         </label>
       </li>
@@ -156,6 +188,19 @@ import Layout from "../layouts/Layout.astro";
   import { data } from "../data/data.js";
 
   const randomizeBtn = document.getElementById("randomize-btn");
+  //Si el checkbox seleccionado, se muestra un circulo verde
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", (e) => {
+      const circle = document.getElementById(`circle-${e.target.value}`);
+      if (e.target.checked) {
+        circle.classList.remove("hidden");
+      } else {
+        circle.classList.add("hidden");
+      }
+    });
+  });
+
 
   const filterData = (data) => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -178,7 +223,7 @@ import Layout from "../layouts/Layout.astro";
 
     card.innerHTML = `
 	<div
-      class="relative mb-8 rounded-lg border border-gray-200 shadow bg-white"
+      class="relative mb-8 md:ml-0 md:mr-8 md:mt-8 rounded-lg border border-gray-200 shadow bg-white"
     >
       <img
         class="object-cover w-full rounded-t-lg h-96"
