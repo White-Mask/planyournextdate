@@ -16,13 +16,45 @@ const { title, description, canonical } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Plan Your Next Date",
+        "url": "https://planyournextdate.xyz",
+        "logo": "https://planyournextdate.xyz/img/logo.png",
+        "description": "En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile."
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Qué tipos de actividades recomiendan en Plan Your Next Date?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Te damos una amplia gama de actividades que incluyen naturaleza, cultura, aventura, nocturnas, caseras y opciones para desconectar, entre otras."
+            }
+          }
+        ]
+      }
+    </script>
+
     <meta name="description" content={description} />
     <meta
       name="keywords"
       content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile"
     />
 
-    <meta property="og:image" content="https://planyournextdate.xyz/favicon.png"/>
+    <meta
+      property="og:image"
+      content="https://planyournextdate.xyz/favicon.png"
+    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={Astro.url} />
@@ -32,23 +64,26 @@ const { title, description, canonical } = Astro.props;
 
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
-    <meta name="google-site-verification" content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc" />
+    <meta
+      name="google-site-verification"
+      content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc"
+    />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="icon" type="image/webp" href="/favicon.webp" />
   </head>
-  <body class="flex flex-col min-h-screen w-full m-0 p-0">
+  <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
     <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
       <a href="/" class="flex flex-row">
         <img
           src="/favicon.webp"
-          class="w-[120px] h-[86px]"
+          class="w-[82px] h-[75px]"
           alt="Plan Your Next Date"
         />
         <div class="relative">
-          <h1
-            class="absolute w-44 text-xl font-bold text-white left-[-16px] top-5"
-          >
+          <h1 class="absolute w-44 text-xl font-bold text-white left-3 top-6">
             PLAN YOURN <br /> NEXT DATE
           </h1>
         </div>
