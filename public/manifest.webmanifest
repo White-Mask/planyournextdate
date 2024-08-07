@@ -1,0 +1,38 @@
+{
+    "short_name": "Pla Your Date",
+    "name": "Plan Your Next Date",
+    "icons": [
+      {
+        "src": "/img/favicon.webp",
+        "type": "image/webp",
+        "sizes": "206x219"
+      },
+      {
+        "src": "/favicon.ico",
+        "type": "image/x-icon",
+        "sizes": "32x34"
+      }
+    ],
+    "background_color": "#FDF6E3",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#E63946",
+    "shortcuts": [
+      {
+        "name": "Buscar actividades para citas",
+        "short_name": "Buscar citas",
+        "description": "Explora actividades para citas en Santiago",
+        "url": "/buscar?source=pwa",
+        "icons": [{ "src": "/img/search.png", "sizes": "512 × 512" }]
+      },
+      {
+        "name": "Planes para amigos",
+        "short_name": "Amigos",
+        "description": "Descubre planes emocionantes para amigos",
+        "url": "/amigos?source=pwa",
+        "icons": [{ "src": "/img/friends.png", "sizes": "512 × 512" }]
+      }
+    ],
+    "description": "Explora las mejores actividades románticas y planes para amigos en Santiago."
+  }
+  
