@@ -1,5 +1,5 @@
 {
-  "short_name": "Pla Your Date",
+  "short_name": "Plan Ur Next Date",
   "name": "Plan Your Next Date",
   "icons": [
     {
@@ -17,6 +17,7 @@
   "display": "fullscreen",
   "scope": "/",
   "theme_color": "#E63946",
+  "lang": "es",
   "shortcuts": [
     {
       "name": "Buscar actividades para citas",
