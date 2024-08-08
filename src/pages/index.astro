@@ -1,9 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { data } from "../data/data.js";
 ---
 
 <Layout
-  title="Plan your next date"
+  title="Plan Your Next Date - Actividades en Santiago"
   description="En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad."
   canonical="https://planyournextdate.xyz"
 >
@@ -187,6 +188,11 @@ import Layout from "../layouts/Layout.astro";
 <script>
   import { data } from "../data/data.js";
 
+  if (document.querySelector("#card-container").innerHTML === "") {
+    showCard(data[0]);
+  }
+
+
   const randomizeBtn = document.getElementById("randomize-btn");
   //Si el checkbox seleccionado, se muestra un circulo verde
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -219,32 +225,100 @@ import Layout from "../layouts/Layout.astro";
     const filteredData = filterData(data);
     const randomItem =
       filteredData[Math.floor(Math.random() * filteredData.length)];
+    
+    showCard(randomItem);
+
+    randomizeBtn.textContent = "Generar otro panorama";
+  });
+
+  function showCard(randomItem){
     const card = document.querySelector("#card-container");
 
+    card.classList.add('relative', 'mb-8', 'rounded-lg', 'border', 'border-gray-200', 'shadow', 'bg-white');
+
     card.innerHTML = `
-	<div
-      class="relative mb-8 rounded-lg border border-gray-200 shadow bg-white"
-    >
-      <img
-        class="object-cover w-full rounded-t-lg h-96"
-        src=${randomItem.image}
-      />
-      <p
-        class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]"
-      >
+      <img class="object-cover w-full rounded-t-lg h-96" src=${randomItem.image} />
+      <p class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]">
         ${randomItem.category.toUpperCase()[0].toUpperCase() + randomItem.category.slice(1)}
       </p>
       <div class="p-5">
-        <p class="mb-2 text-lg font-bold tracking-tight text-gray-900">
-          ${randomItem.name}
-        </p>
-
-        <p class="mb-3 font-normal text-gray-700">
-          ${randomItem.description}
-        </p>
+        <p class="mb-2 text-lg font-bold tracking-tight text-gray-900">${randomItem.name}</p>
+        <p class="mb-3 font-normal text-gray-700">${randomItem.description}</p>
+        ${randomItem.duration ? `
+          <p class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]">
+            ${randomItem.duration}
+          </p>` : 'Sin duración'}
       </div>
-    </div>
-	`;
-    randomizeBtn.textContent = "Generar otro panorama";
-  });
+      ${randomItem.locations ? `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Lugares</h3>
+        <ul class=" space-y-6">
+          ${randomItem.locations.map(location => `
+            <li class="mb-2 ">
+              <h4 class="text-[#eb1c63] font-semibold mb-3">${location.name}</h4>
+              <p class="text-gray-700 ml-12 mb-3">${location.address}</p>
+              <p class="text-gray-700 ml-12 mb-3">${location.price_range}</p>
+              <p class="text-gray-700 ml-12 mb-3">${location.reservation_required ? 'Reserva requerida' : 'Sin reserva'}</p>
+              <a href="${location.website}" target="_blank" class="text-blue-600 hover:text-blue-800 ml-12">Visitar sitio web</a>
+            </li>
+          `).join('')}
+        </ul>
+      </div>` : `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Lugares</h3>
+        <p class="text-gray-700">Aun no hay lugares asociados a este panorama.</p>
+      </div>`}
+      ${randomItem.faq ? `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Preguntas frecuentes</h3>
+        <ul class="space-y-4">
+          ${randomItem.faq.map(faq => `
+            <li class="bg-gray-100 p-4 rounded-lg shadow">
+              <details>
+                <summary class="font-semibold cursor-pointer text-lg text-gray-800">${faq.question}</summary>
+                <p class="mt-2 text-gray-600">${faq.answer}</p>
+              </details>
+            </li>
+          `).join('')}
+        </ul>
+      </div>` : `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Preguntas frecuentes</h3>
+        <p class="text-gray-700">Aún no hay preguntas frecuentes asociadas a este panorama.</p>
+      </div>`}
+      ${randomItem.related_articles ? `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Artículos relacionados</h3>
+        <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          ${randomItem.related_articles.map(article => `
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+              <div class="bg-cover bg-center h-56 p-4" style="background-image: url(${article.image})"></div>
+              <div class="p-4">
+                <h2 class="text-lg font-bold mb-2">${article.title}</h2>
+                <a href="${article.link}" target="_blank" class="text-blue-600 hover:text-blue-800">Leer más</a>
+              </div>
+            </div>
+          `).join('')}
+        </div>
+      </div>` : `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Artículos relacionados</h3>
+        <p class="text-gray-700">Aún no hay artículos relacionados a este panorama.</p>
+      </div>`}
+      ${randomItem.tags ? `
+      <div class="p-5 border-t border-gray-200">
+        <h3 class="text-2xl font-bold mb-6 text-gray-900">Tags</h3>
+        <div class="mr-2 mb-2">
+          ${randomItem.tags.map(tag => `
+            <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">${tag}</span>
+          `).join('')}
+        </div>
+      </div>` : `
+      <div class="p-5 border border-gray-200">
+        <h3 class="mb-2 text-lg font-bold text-gray-900">Tags</h3>
+        <p class="text-gray-700">Aun no hay tags asociados a este panorama.</p>
+      </div>`}
+    `;
+  }
+
 </script>
