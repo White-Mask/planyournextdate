@@ -3,14 +3,24 @@
   "name": "Plan Your Next Date",
   "icons": [
     {
+      "src": "/favicon.ico",
+      "type": "image/x-icon",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/favicon-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "/favicon-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
       "src": "/favicon.webp",
       "type": "image/webp",
       "sizes": "206x219"
-    },
-    {
-      "src": "/favicon.ico",
-      "type": "image/x-icon",
-      "sizes": "32x34"
     }
   ],
   "background_color": "#FDF6E3",
