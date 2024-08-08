@@ -237,14 +237,14 @@ import { data } from "../data/data.js";
 
     card.innerHTML = `
       <img class="object-cover w-full rounded-t-lg h-96" src=${randomItem.image} alt="Ejemplo de ${randomItem.name} como experiencia"/>
-      <p class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]">
+      <p class="absolute right-[20px] top-[368px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
         ${randomItem.category.toUpperCase()[0].toUpperCase() + randomItem.category.slice(1)}
       </p>
       <div class="p-5">
         <p class="mb-2 text-lg font-bold tracking-tight text-gray-900">${randomItem.name}</p>
         <p class="mb-3 font-normal text-gray-700">${randomItem.description}</p>
         ${randomItem.duration ? `
-          <p class="absolute right-[20px] top-[20px] text-white text-center px-5 py-1 rounded-lg bg-[#cf1c58]">
+          <p class="absolute left-[20px] top-[20px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
             ${randomItem.duration}
           </p>` : 'Sin duración'}
       </div>
@@ -272,7 +272,7 @@ import { data } from "../data/data.js";
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Preguntas frecuentes</h3>
         <ul class="space-y-4">
           ${randomItem.faq.map(faq => `
-            <li class="bg-gray-100 p-4 rounded-lg shadow">
+            <li class="bg-gray-100 p-4 rounded-lg">
               <details>
                 <summary class="font-semibold cursor-pointer text-lg text-gray-800">${faq.question}</summary>
                 <p class="mt-2 text-gray-600">${faq.answer}</p>
@@ -290,7 +290,7 @@ import { data } from "../data/data.js";
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Artículos relacionados</h3>
         <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
           ${randomItem.related_articles.map(article => `
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+            <div class="bg-white shadow-md rounded-lg overflow-hidden">
               <div class="bg-cover bg-center h-56 p-4" style="background-image: url(${article.image})"></div>
               <div class="p-4">
                 <h2 class="text-lg font-bold mb-2">${article.title}</h2>
