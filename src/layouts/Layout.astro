@@ -46,14 +46,15 @@ const { title, description, canonical } = Astro.props;
     </script>
 
     <meta name="description" content={description} />
+    <meta name="application-name" content="Plan Your Next Date" />
     <meta
       name="keywords"
-      content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile"
+      content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile, Plan Your Next Date Chile, Plan Your Next Date Santiago"
     />
 
     <meta
       property="og:image"
-      content="https://planyournextdate.xyz/favicon.png"
+      content="https://planyournextdate.xyz/favicon/favicon-32x32.png"
     />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
@@ -72,16 +73,19 @@ const { title, description, canonical } = Astro.props;
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
     
-    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
-    <link rel="icon" type="image/webp" href="/favicon.webp" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/webp" href="/favicon/favicon.webp"/>
   </head>
   <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
     <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
       <a href="/" class="flex flex-row">
         <img
-          src="/favicon.webp"
+          src="/favicon/favicon.webp"
           class="w-[82px] h-[75px]"
           alt="Plan Your Next Date"
         />

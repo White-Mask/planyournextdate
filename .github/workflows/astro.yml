@@ -72,8 +72,6 @@ jobs:
             --site "${{ steps.pages.outputs.origin }}" \
             --base "${{ steps.pages.outputs.base_path }}"
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Rename sitemap
-        run: mv ${{ env.BUILD_PATH }}/dist/sitemap-index.xml ${{ env.BUILD_PATH }}/dist/sitemap.xml
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
