@@ -5,7 +5,7 @@ export const data = [
     name: "Jazz club",
     image:
       "https://lefifa.com/uploads/images/jazz-club-owner/_large/Jazz_Club_Owner_-_0174-_Sharpened_-2_-_FIFA.jpg",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Ir a un club de jazz es una opción elegante y sofisticada para una cita nocturna. Pueden disfrutar de la música en vivo, la atmósfera íntima y acogedora, y compartir momentos especiales mientras se dejan llevar por los ritmos suaves y envolventes del jazz.",
     locations: [
@@ -75,7 +75,7 @@ export const data = [
     name: "Restaurante",
     image:
       "https://img.freepik.com/fotos-premium/pareja-enamorada-restaurante-luces-al-fondo_662214-13292.jpg",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Una cena en un restaurante es una opción clásica para una cita. Pueden elegir un lugar romántico y acogedor, o uno más animado y divertido, según sus gustos. La comida y la bebida siempre son una buena excusa para disfrutar de una velada juntos.",
     tags: ["Romántico", "Gastronomía", "Cena", "Nocturno", "Gourmet"],
@@ -85,7 +85,7 @@ export const data = [
     name: "Bar",
     image:
       "https://i0.wp.com/60mais.com.br/wp-content/uploads/2019/01/bares-e-programas-noturnos-para-60.jpg?fit=1000%2C664&ssl=1",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Ir a un bar es una opción relajada y divertida para una cita nocturna. Pueden disfrutar de una copa juntos en un ambiente animado y acogedor, y compartir risas y buenos momentos mientras degustan sus bebidas favoritas.",
     tags: ["Cócteles", "Bar Nocturno", "Ambiente", "Salidas con Amigos"],
@@ -94,7 +94,7 @@ export const data = [
     name: "Discoteca",
     image:
       "https://madriddiferente.com/wp-content/uploads/2018/05/graf-destacada-770x466.jpg",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Ir a una discoteca es una opción divertida y animada para una cita nocturna. Pueden bailar juntos, disfrutar de la música y la atmósfera festiva, y compartir la emoción y la energía de la pista de baile en un ambiente vibrante y lleno de vida.",
     tags: ["Discoteca", "Música", "Baile", "Vida Nocturna", "DJ", "Eventos"],
@@ -103,7 +103,7 @@ export const data = [
     name: "Show de comedia",
     image:
       "https://fotos.orepublicano.com.br/uploads/fotos/1614713989_603e94856becc.jpeg",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Ir a un show de comedia es una opción divertida y entretenida para una cita nocturna. Pueden reír juntos, disfrutar de las actuaciones cómicas y compartir momentos de diversión y buen humor en un ambiente festivo y animado.",
     tags: ["Comedia", "Humor", "Stand-Up", "Nocturno", "Diversión", "Entretenimiento"],
@@ -112,7 +112,7 @@ export const data = [
     name: "Cine",
     image:
       "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
-    category: "nocturnas",
+    category: "nocturna",
     description:
       "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
     tags: ["Cine", "Películas", "Entretenimiento", "Nocturno", "Tecnología IMAX", "4DX"],
@@ -161,12 +161,12 @@ export const data = [
       "La Terapia de Flotación es una actividad única que ofrece una experiencia de relajación profunda. Los participantes flotan en una solución de agua salina en un entorno libre de estímulos externos, lo que promueve la meditación, el alivio del estrés y el bienestar general.",
     tags: ["Terapia de Flotación", "Relajación", "Bienestar", "Aislamiento Sensorial", "Salud", "Estrés"],
   },
-  //caseras
+  //casera
   {
     name: "Cocinar",
     image:
       "https://www.fmdos.cl/wp-content/uploads/2017/08/GettyImages-98471686-1024x683.jpg",
-    category: "caseras",
+    category: "casera",
     description:
       "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
     tags: ["Casero", "Creativo", "Colaborativo"],
@@ -175,7 +175,7 @@ export const data = [
     name: "Juegos de mesa",
     image:
       "https://www.educaciontrespuntocero.com/wp-content/uploads/2023/07/destacada-juegos-860x574.jpg",
-    category: "caseras",
+    category: "casera",
     description:
       "Los juegos de mesa son una forma divertida y entretenida de pasar tiempo juntos en casa. Pueden elegir un juego clásico que ya conozcan o probar uno nuevo que les permita desafiar sus habilidades y competir de manera amistosa.",
     tags: ["Juegos de Mesa", "Diversión", "Socializar", "Entretenimiento", "Torneos", "Cafetería"],
@@ -184,7 +184,7 @@ export const data = [
     name: "Películas o series",
     image:
       "https://www.eluniverso.com/resizer/v2/AEWN27WM5VG4HENU7XFTHG5LRA.jpeg?auth=93259134244e0df5a02b940cf9cf61504a0e38f2122ec797b2e57a88bfa35942&width=1191&height=670&quality=75&smart=true",
-    category: "caseras",
+    category: "casera",
     description:
       "Ver películas o series juntos es una forma relajada y cómoda de disfrutar de la compañía mutua. Pueden elegir un género que les guste a ambos o explorar nuevas opciones para descubrir películas y series interesantes que puedan disfrutar juntos.",
     tags: ["Películas", "Series", "Streaming", "Entretenimiento", "Maratón", "Cine en Casa"],

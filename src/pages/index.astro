@@ -17,23 +17,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="naturaleza-option"
+          id="categoria-naturaleza"
           value="naturaleza"
           class="hidden peer"
         />
        <div class="relative">
-        <div id="circle-naturaleza" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+        <div id="contorno-categoria-naturaleza" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
        </div>
         <label
-          for="naturaleza-option"
+          for="categoria-naturaleza"
           class="inline-flex lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/nature.png"
-              class="w-[32px] h-[32px]"
-              alt="Opción naturaleza"
-            />
+              <img src=`img/naturaleza.svg` alt="Icono de categoria naturaleza" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-67px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Naturaleza</p>
             </div>
@@ -43,23 +39,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="cultura-option"
+          id="categoria-cultura"
           value="cultura"
           class="hidden peer"
         />
         <div class="relative">
-          <div id="circle-cultura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+          <div id="contorno-categoria-cultura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
          </div>
         <label
-          for="cultura-option"
+          for="categoria-cultura"
           class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/sculpture.png"
-              class="w-[32px] h-[32px]"
-              alt="Opción cultura"
-            />
+            <img src=`img/cultura.svg` alt="Icono de categoria cultura" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-49px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Cultura</p>
             </div>
@@ -69,23 +61,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="aventura-option"
+          id="categoria-aventura"
           value="aventura"
           class="hidden peer"
         />
         <div class="relative">
-          <div id="circle-aventura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+          <div id="contorno-categoria-aventura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
          </div>
         <label
-          for="aventura-option"
+          for="categoria-aventura"
           class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/running.webp"
-              class="w-[32px] h-[32px]"
-              alt="Opción aventura"
-            />
+            <img src=`img/aventura.svg` alt="Icono de categoria aventura" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-58px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Aventura</p>
             </div>
@@ -95,23 +83,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="nocturnas-option"
-          value="nocturnas"
+          id="categoria-nocturna"
+          value="nocturna"
           class="hidden peer"
         />
         <div class="relative">
-          <div id="circle-nocturnas" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+          <div id="contorno-categoria-nocturna" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
          </div>
         <label
-          for="nocturnas-option"
+          for="categoria-nocturna"
           class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/night-mode.webp"
-              class="w-[32px] h-[32px]"
-              alt="Opción nocturnas"
-            />
+            <img src=`img/nocturna.svg` alt="Icono de categoria nocturna" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-66px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Nocturnas</p>
             </div>
@@ -121,23 +105,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="caseras-option"
-          value="caseras"
+          id="categoria-casera"
+          value="casera"
           class="hidden peer"
         />
         <div class="relative">
-          <div id="circle-caseras" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+          <div id="contorno-categoria-casera" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
          </div>
         <label
-          for="caseras-option"
+          for="categoria-casera"
           class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/home.webp"
-              class="w-[32px] h-[32px]"
-              alt="Opción caseras"
-            />
+            <img src=`img/casera.svg` alt="Icono de categoria casera" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-52px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Caseras</p>
             </div>
@@ -147,23 +127,19 @@ import Layout from "../layouts/Layout.astro";
       <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
         <input
           type="checkbox"
-          id="desconectar-option"
+          id="categoria-desconectar"
           value="desconectar"
           class="hidden peer"
         />
         <div class="relative">
-          <div id="circle-desconectar" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
+          <div id="contorno-categoria-desconectar" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
          </div>
         <label
-          for="desconectar-option"
+          for="categoria-desconectar"
           class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#E04277] hover:text-gray-600 peer-checked:text-gray-600"
         >
           <div class="flex items-center">
-            <img
-              src="/img/psychology.webp"
-              class="w-[32px] h-[32px]"
-              alt="Opción desconectar"
-            />
+            <img src=`img/desconectar.svg` alt="Icono de categoria desconectar" loading="lazy" width="32" height="32">
             <div class="relative w-full">
               <p class="absolute top-10 left-[-76px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Desconectar</p>
             </div>
@@ -196,7 +172,7 @@ import Layout from "../layouts/Layout.astro";
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", (e) => {
-      const circle = document.getElementById(`circle-${e.target.value}`);
+      const circle = document.getElementById(`contorno-categoria-${e.target.value}`);
       if (e.target.checked) {
         circle.classList.remove("hidden");
       } else {
@@ -233,7 +209,6 @@ import Layout from "../layouts/Layout.astro";
     const card = document.querySelector("#card-container");
 
     card.classList.add('relative', 'mb-8', 'rounded-lg', 'border', 'border-gray-200', 'shadow', 'bg-white');
-
     card.innerHTML = `
       <img class="object-cover w-full rounded-t-lg h-96" src=${randomItem.image} alt="Ejemplo de ${randomItem.name} como experiencia"/>
       <p class="absolute right-[20px] top-[368px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
