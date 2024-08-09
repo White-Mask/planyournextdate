@@ -245,7 +245,7 @@ import Layout from "../layouts/Layout.astro";
         ${randomItem.duration ? `
           <p class="absolute left-[20px] top-[20px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
             ${randomItem.duration}
-          </p>` : 'Sin duración'}
+          </p>` : ''/*'Sin duración'*/}
       </div>
       ${randomItem.locations ? `
       <div class="p-5 border-t border-gray-200">
