@@ -16,6 +16,7 @@ const { title, description, canonical } = Astro.props;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
+    <meta name="description" content={description} />
 
     <script type="application/ld+json">
       {
@@ -65,8 +66,7 @@ const { title, description, canonical } = Astro.props;
         ]
       }
     </script>
-    <meta name="msapplication-config" content="/browserconfig.xml" />
-    <meta name="description" content={description} />
+    
     <meta name="application-name" content="Plan Your Next Date" />
     <meta
       name="keywords"
@@ -90,59 +90,26 @@ const { title, description, canonical } = Astro.props;
       name="google-site-verification"
       content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc"
     />
-    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="canonical" href={canonical} />
+    <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="16x16"
-      href="/favicon-16x16.ico"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      sizes="32x32"
-      href="/favicon-32x32.ico"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/favicon/favicon-16x16.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="192x192"
-      href="/favicon/android-chrome-192x192.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="512x512"
-      href="/favicon/android-chrome-512x512.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
-    />
-    <link rel="icon" type="image/webp" href="/favicon/favicon.webp" />
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-config" content="/browserconfig.xml" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e63946">
+    <meta name="msapplication-TileColor" content="#e63946">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#e63946">
   </head>
   <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
     <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
       <a href="/" class="flex flex-row">
         <img
-          src="/favicon/favicon.webp"
+          src="/favicon.webp"
           class="w-[82px] h-[75px]"
           alt="Plan Your Next Date"
         />
