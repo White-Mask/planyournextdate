@@ -1,6 +1,7 @@
 ---
 import Footer from "../components/Footer.astro";
 import "@fontsource-variable/montserrat";
+
 interface Props {
   title: string;
   description: string;
@@ -24,7 +25,7 @@ const { title, description, canonical } = Astro.props;
         "@type": "Organization",
         "name": "Plan Your Next Date - Actividades para Parejas y Amigos en Santiago, Chile",
         "url": "https://planyournextdate.xyz",
-        "logo": "https://planyournextdate.xyz/favicon/favicon-32x32.png",
+        "logo": "https://planyournextdate.xyz/favicon.webp",
         "description": "En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad.",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -94,27 +95,28 @@ const { title, description, canonical } = Astro.props;
     <link rel="manifest" href="/manifest.json" />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-config" content="/browserconfig.xml" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#e63946">
-    <meta name="msapplication-TileColor" content="#e63946">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#c2185b">
+    <meta name="msapplication-TileColor" content="#c2185b">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#e63946">
+    <meta name="theme-color" content="#c2185b">
   </head>
   <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
-    <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
+    <section class="py-8 md:pl-16 pl-14 bg-[#c2185b]">
       <a href="/" class="flex flex-row">
         <img
           src="/favicon.webp"
-          class="w-[82px] h-[75px]"
+          width="82"
+          height="82"
           alt="Plan Your Next Date"
         />
         <div class="relative">
-          <h1 class="absolute w-44 text-xl font-bold text-white left-3 top-6">
+          <h1 class="absolute w-44 text-xl font-bold text-white left-3 top-7">
             PLAN YOURN <br /> NEXT DATE
           </h1>
         </div>
