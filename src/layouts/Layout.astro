@@ -21,10 +21,15 @@ const { title, description, canonical } = Astro.props;
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Plan Your Next Date",
+        "name": "Plan Your Next Date - Actividades para Parejas y Amigos en Santiago, Chile",
         "url": "https://planyournextdate.xyz",
-        "logo": "https://planyournextdate.xyz/img/logo.png",
-        "description": "En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile."
+        "logo": "https://planyournextdate.xyz/favicon/favicon-32x32.png",
+        "description": "En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "areaServed": "CL",
+          "availableLanguage": ["Spanish"]
+        }
       }
     </script>
 
@@ -40,16 +45,32 @@ const { title, description, canonical } = Astro.props;
               "@type": "Answer",
               "text": "Te damos una amplia gama de actividades que incluyen naturaleza, cultura, aventura, nocturnas, caseras y opciones para desconectar, entre otras."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Se necesita reservar en todos los locales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, solo en algunos locales como La Fabbrica y Backroom Bar es necesario realizar una reserva previa."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Hay descuentos especiales?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sí, puedes obtener entrada especial en Thelonious para el segundo concierto de viernes y sábado."
+            }
           }
         ]
       }
     </script>
-
+    <meta name="msapplication-config" content="/browserconfig.xml" />
     <meta name="description" content={description} />
     <meta name="application-name" content="Plan Your Next Date" />
     <meta
       name="keywords"
-      content="actividades para parejas en Santiago, planes románticos en Chile, ideas para citas en Santiago, escapadas románticas Chile, experiencias únicas Santiago, actividades para amigos en Santiago, diversión con amigos Chile, Plan Your Next Date Chile, Plan Your Next Date Santiago"
+      content="actividades para parejas en Santiago, citas románticas Santiago, planes románticos Chile, escapadas románticas Santiago, experiencias únicas Chile, diversión con amigos Santiago, ideas para citas Santiago, Plan Your Next Date Santiago, Plan Your Next Date Chile, Plan Your Next Date"
     />
 
     <meta
@@ -69,17 +90,53 @@ const { title, description, canonical } = Astro.props;
       name="google-site-verification"
       content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc"
     />
-    <link rel="manifest" href="/manifest.webmanifest">
+    <link rel="manifest" href="/manifest.webmanifest" />
     <link rel="canonical" href={canonical} />
     <link rel="sitemap" href="/sitemap-index.xml" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/webp" href="/favicon/favicon.webp"/>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16"
+      href="/favicon-16x16.ico"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="32x32"
+      href="/favicon-32x32.ico"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/webp" href="/favicon/favicon.webp" />
   </head>
   <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
     <section class="py-8 md:pl-16 pl-14 bg-[#eb1c63]">
