@@ -13,8 +13,9 @@
             "type": "image/png"
         }
     ],
-  "start_url": "planyournextdate.xyz",
-  "background_color": "#FDF6E3",
+  "start_url": "./index.html",
+  "manifest_version": 0.1,
+  "background_color": "#c2185b",
   "display": "standalone",
   "scope": "/",
   "theme_color": "#c2185b",
