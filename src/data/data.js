@@ -109,13 +109,61 @@ export const data = [
     tags: ["Comedia", "Humor", "Stand-Up", "Nocturno", "Diversión", "Entretenimiento"],
   },
   {
-    name: "Cine",
-    image:
-      "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
-    category: "nocturna",
-    description:
-      "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
-    tags: ["Cine", "Películas", "Entretenimiento", "Nocturno", "Tecnología IMAX", "4DX"],
+    "name": "Cine",
+    "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
+    "category": "nocturna",
+    "description": "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
+    "duration": "2-3 horas",
+    "recommended_gear": "Ropa casual",
+    "locations": [
+      {
+        "name": "Cine Hoyts",
+        "address": "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        "website": "https://www.hoyts.cl/",
+        "price_range": "$4.800 - $5.800",
+        "hours": "Varía según la cartelera",
+        "special_info": "Este cine cuenta con salas tradicionales, IMAX y 4DX, así como una amplia variedad de películas y horarios para elegir.",
+        "reservation_required": false,
+      },
+      {
+        name: "Cineplanet",
+        address: "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        website: "https://www.cineplanet.cl/",
+        price_range: "$4.200 - $5.300",
+        hours: "Varía según la cartelera",
+        special_info: "Cineplanet ofrece una experiencia de cine premium con salas VIP, 4DX y XD, así como una amplia variedad de películas y horarios para elegir.",
+        reservation_required: false,
+      },
+      {
+        "name": "Cinemark",
+        address: "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        website: "https://www.cinemark.cl/",
+        price_range: "$7.000 - $13.000",
+        hours: "Varía según la cartelera",
+        special_info: "Cinemark cuenta con salas tradicionales, XD y D-BOX, así como una amplia variedad de películas y horarios para elegir.",
+        reservation_required: false,
+      },
+      {
+        name: "Cineteca Nacional de Chile",
+        address: "Plaza de la Ciudadanía 26, 8320000 Santiago, Región Metropolitana",
+        website: "hthttps://www.cclm.cl/cineteca-nacional-de-chile/",
+        price_range: "$1.250 - $4.000",
+        hours: "Varía según la cartelera",
+        special_info: "La Cineteca Nacional de Chile ofrece una programación variada de cine chileno e internacional, con ciclos temáticos, retrospectivas y muestras especiales.",
+        reservation_required: false,
+      },
+    ],
+    "faq": [
+      {
+        "question": "¿Hay descuentos para estudiantes o adultos mayores?",
+        "answer": "Sí, la mayoría de los cines ofrecen descuentos para estudiantes y adultos mayores."
+      },
+      {
+        "question": "¿Se puede reservar asientos en los cines?",
+        "answer": "Sí, muchos cines permiten reservar asientos en línea o en taquilla."
+      }
+    ],
+    "tags": ["Cine", "Películas", "Entretenimiento", "Nocturno", "Tecnología IMAX", "4DX"]
   },
   //relajación
   {
