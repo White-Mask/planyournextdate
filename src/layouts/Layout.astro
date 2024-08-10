@@ -19,7 +19,7 @@ const { title, description, canonical } = Astro.props;
     <title>{title}</title>
     <meta name="description" content={description} />
 
-    <script type="application/ld+json">
+    <script is:inline type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Organization",
@@ -35,7 +35,7 @@ const { title, description, canonical } = Astro.props;
       }
     </script>
 
-    <script type="application/ld+json">
+    <script is:inline type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "FAQPage",

@@ -19,31 +19,5 @@
   "scope": "/",
   "theme_color": "#c2185b",
   "lang": "es",
-  "shortcuts": [
-    {
-      "name": "Buscar actividades para citas",
-      "short_name": "Buscar citas",
-      "description": "Explora actividades para citas en Santiago",
-      "url": "/buscar?source=pwa",
-      "icons": [
-        {
-          "src": "/img/search.png",
-          "sizes": "512 × 512"
-        }
-      ]
-    },
-    {
-      "name": "Planes para amigos",
-      "short_name": "Amigos",
-      "description": "Descubre planes emocionantes para amigos",
-      "url": "/amigos?source=pwa",
-      "icons": [
-        {
-          "src": "/img/friends.png",
-          "sizes": "512 × 512"
-        }
-      ]
-    }
-  ],
   "description": "Explora las mejores actividades románticas y planes para amigos en Santiago."
 }
