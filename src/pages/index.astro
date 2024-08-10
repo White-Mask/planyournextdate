@@ -7,157 +7,240 @@ import Layout from "../layouts/Layout.astro";
   description="En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad."
   canonical="https://planyournextdate.xyz"
 >
-  <section class="w-4/5 max-w-[1024px] h-full p-5 bg-[#f5ebd9] rounded-lg my-8">
+  <section
+    class="max-w-[1024px] w-[95%] h-full p-5 bg-[#f5ebd9] rounded-lg my-8"
+  >
     <h2 class="mb-1 text-lg font-bold text-gray-700">Filtros</h2>
-    <p class="mb-7 text-sm text-gray-900">
-      Selecciona de panorama:
-    </p>
+    <p class="mb-7 text-sm text-gray-900">Selecciona de panorama:</p>
     <!--items en el centro -->
-    <ul class="grid grid-cols-2 gap-6 sm:grid-cols-3">
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-naturaleza"
-          value="naturaleza"
-          class="hidden peer"
-        />
-       <div class="relative">
-        <div id="contorno-categoria-naturaleza" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-       </div>
-        <label
-          for="categoria-naturaleza"
-          class="inline-flex lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-              <img src=`img/naturaleza.svg` alt="Icono de categoria naturaleza" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-67px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Naturaleza</p>
+    <div class="flex flex-col lg:flex-row lg:justify-center">
+      <ul class="grid grid-cols-2 sm:grid-cols-3 lg:flex lg:shrink-[10] gap-8">
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-naturaleza"
+            value="naturaleza"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-naturaleza"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-cultura"
-          value="cultura"
-          class="hidden peer"
-        />
-        <div class="relative">
-          <div id="contorno-categoria-cultura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-         </div>
-        <label
-          for="categoria-cultura"
-          class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img src=`img/cultura.svg` alt="Icono de categoria cultura" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-49px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Cultura</p>
+          <label
+            for="categoria-naturaleza"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/naturaleza.svg`
+                alt="Icono de categoria naturaleza"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-67px] text-lg font-semibold">
+                  Naturaleza
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-cultura"
+            value="cultura"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-cultura"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-aventura"
-          value="aventura"
-          class="hidden peer"
-        />
-        <div class="relative">
-          <div id="contorno-categoria-aventura" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-         </div>
-        <label
-          for="categoria-aventura"
-          class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img src=`img/aventura.svg` alt="Icono de categoria aventura" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-58px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Aventura</p>
+          <label
+            for="categoria-cultura"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/cultura.svg`
+                alt="Icono de categoria cultura"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-49px] text-lg font-semibold">
+                  Cultura
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-aventura"
+            value="aventura"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-aventura"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-nocturna"
-          value="nocturna"
-          class="hidden peer"
-        />
-        <div class="relative">
-          <div id="contorno-categoria-nocturna" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-         </div>
-        <label
-          for="categoria-nocturna"
-          class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img src=`img/nocturna.svg` alt="Icono de categoria nocturna" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-66px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Nocturnas</p>
+          <label
+            for="categoria-aventura"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/aventura.svg`
+                alt="Icono de categoria aventura"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-58px] text-lg font-semibold">
+                  Aventura
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-nocturna"
+            value="nocturna"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-nocturna"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-casera"
-          value="casera"
-          class="hidden peer"
-        />
-        <div class="relative">
-          <div id="contorno-categoria-casera" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-         </div>
-        <label
-          for="categoria-casera"
-          class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img src=`img/casera.svg` alt="Icono de categoria casera" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-52px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Caseras</p>
+          <label
+            for="categoria-nocturna"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/nocturna.svg`
+                alt="Icono de categoria nocturna"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-66px] text-lg font-semibold">
+                  Nocturnas
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-casera"
+            value="casera"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-casera"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-      <li class="flex flex-col items-center min-w-[105px] min-h-[79px] lg:w-[236px] mb-8">
-        <input
-          type="checkbox"
-          id="categoria-desconectar"
-          value="desconectar"
-          class="hidden peer"
-        />
-        <div class="relative">
-          <div id="contorno-categoria-desconectar" class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden">✓</div>
-         </div>
-        <label
-          for="categoria-desconectar"
-          class="inline-flex items-center justify-between lg:w-[236px] p-5 text-gray-700 bg-white border-2 border-gray-700 lg:rounded-lg rounded-full cursor-pointer peer-checked:border-[3.5px] peer-checked:border-[#8c0032] hover:text-gray-600 peer-checked:text-gray-600"
-        >
-          <div class="flex items-center">
-            <img src=`img/desconectar.svg` alt="Icono de categoria desconectar" loading="lazy" width="32" height="32">
-            <div class="relative w-full">
-              <p class="absolute top-10 left-[-76px] lg:top-[-10px] lg:left-[22px] text-lg font-semibold ">Desconectar</p>
+          <label
+            for="categoria-casera"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/casera.svg`
+                alt="Icono de categoria casera"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-52px] text-lg font-semibold">
+                  Caseras
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+        <li class="flex flex-col items-center min-w-[105px] min-h-[79px] mb-8">
+          <input
+            type="checkbox"
+            id="categoria-desconectar"
+            value="desconectar"
+            class="hidden peer"
+          />
+          <div class="relative">
+            <div
+              id="contorno-categoria-desconectar"
+              class="absolute left-5 lg:left-28 lg:top-[-10px] w-6 h-6 bg-green-500 text-white rounded-full text-center hidden"
+            >
+              ✓
             </div>
           </div>
-        </label>
-      </li>
-    </ul>
-    <div class="w-full flex justify-center mt-8">
-      <button
-        id="randomize-btn"
-        class="w-[260px] text-white bg-[#c2185b] hover:bg-[#8c0032] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c2185b] font-bold rounded-lg text-md py-4 text-center"
+          <label
+            for="categoria-desconectar"
+            class="inline-flex p-5 text-gray-700 bg-white border-2 border-gray-700 rounded-full cursor-pointer peer-checked:ring-4 peer-checked:ring-offset-4 peer-checked:ring-[#c2185b] peer-checked: hover:text-gray-600 peer-checked:text-gray-600"
+          >
+            <div class="flex items-center">
+              <img
+                src=`img/desconectar.svg`
+                alt="Icono de categoria desconectar"
+                loading="lazy"
+                width="32"
+                height="32"
+              />
+              <div class="relative w-full">
+                <p class="absolute top-10 left-[-76px] text-lg font-semibold">
+                  Desconectar
+                </p>
+              </div>
+            </div>
+          </label>
+        </li>
+      </ul>
+      <div
+        class="w-min-[105px] flex justify-center mt-8 lg:mt-0 items-center lg:items-start lg:shrink-[2]"
       >
-        Generar panorama
-      </button>
+        <div class="none lg:block lg:w-[1px] lg:h-[76px] lg:bg-gray-900 lg:mx-8"></div>
+        <button
+          id="randomize-btn"
+          class="w-[206px] h-[46px] lg:w-[76px] lg:h-[76px] rounded-lg lg:rounded-full text-white font-bold text-center bg-[#c2185b] hover:bg-[#8c0032] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#c2185b]"
+        >
+          Buscar
+        </button>
+      </div>
     </div>
   </section>
 
-  <section id="card-container" class="mx-auto w-4/5 max-w-[1024px]"></section>
+  <section id="card-container" class="mx-auto w-[95%] max-w-[1024px]"></section>
 </Layout>
 
 <script>
@@ -167,12 +250,13 @@ import Layout from "../layouts/Layout.astro";
     showCard(data[0]);
   }
 
-
   const randomizeBtn = document.getElementById("randomize-btn");
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", (e) => {
-      const circle = document.getElementById(`contorno-categoria-${e.target.value}`);
+      const circle = document.getElementById(
+        `contorno-categoria-${e.target.value}`
+      );
       if (e.target.checked) {
         circle.classList.remove("hidden");
       } else {
@@ -180,7 +264,6 @@ import Layout from "../layouts/Layout.astro";
       }
     });
   });
-
 
   const filterData = (data) => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
@@ -199,16 +282,22 @@ import Layout from "../layouts/Layout.astro";
     const filteredData = filterData(data);
     const randomItem =
       filteredData[Math.floor(Math.random() * filteredData.length)];
-    
-    showCard(randomItem);
 
-    randomizeBtn.textContent = "Generar otro panorama";
+    showCard(randomItem);
   });
 
-  function showCard(randomItem){
+  function showCard(randomItem) {
     const card = document.querySelector("#card-container");
 
-    card.classList.add('relative', 'mb-8', 'rounded-lg', 'border', 'border-gray-200', 'shadow', 'bg-white');
+    card.classList.add(
+      "relative",
+      "mb-8",
+      "rounded-lg",
+      "border",
+      "border-gray-200",
+      "shadow",
+      "bg-white"
+    );
     card.innerHTML = `
       <img class="object-cover w-full rounded-t-lg h-96" src=${randomItem.image} alt="Ejemplo de ${randomItem.name} como experiencia"/>
       <p class="absolute right-[20px] top-[368px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
@@ -217,53 +306,77 @@ import Layout from "../layouts/Layout.astro";
       <div class="p-5">
         <p class="mb-2 text-lg font-bold tracking-tight text-gray-900">${randomItem.name}</p>
         <p class="mb-3 font-normal text-gray-700">${randomItem.description}</p>
-        ${randomItem.duration ? `
+        ${
+          randomItem.duration
+            ? `
           <p class="absolute left-[20px] top-[20px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
             ${randomItem.duration}
-          </p>` : ''/*'Sin duración'*/}
+          </p>`
+            : "" /*'Sin duración'*/
+        }
       </div>
-      ${randomItem.locations ? `
+      ${
+        randomItem.locations
+          ? `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Lugares</h3>
         <ul class=" space-y-6">
-          ${randomItem.locations.map(location => `
+          ${randomItem.locations
+            .map(
+              (location) => `
             <li class="mb-2 ">
               <h4 class="text-[#b71c1c] font-semibold mb-3">${location.name}</h4>
               <p class="text-gray-700 ml-12 mb-3">${location.address}</p>
               <p class="text-gray-700 ml-12 mb-3">${location.price_range}</p>
-              <p class="text-gray-700 ml-12 mb-3">${location.reservation_required ? 'Reserva requerida' : 'Sin reserva'}</p>
+              <p class="text-gray-700 ml-12 mb-3">${location.reservation_required ? "Reserva requerida" : "Sin reserva"}</p>
               <a href="${location.website}" target="_blank" class="text-blue-600 hover:text-blue-800 ml-12">Visitar sitio web</a>
             </li>
-          `).join('')}
+          `
+            )
+            .join("")}
         </ul>
-      </div>` : `
+      </div>`
+          : `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Lugares</h3>
         <p class="text-gray-700">Aun no hay lugares asociados a este panorama.</p>
-      </div>`}
-      ${randomItem.faq ? `
+      </div>`
+      }
+      ${
+        randomItem.faq
+          ? `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Preguntas frecuentes</h3>
         <ul class="space-y-4">
-          ${randomItem.faq.map(faq => `
+          ${randomItem.faq
+            .map(
+              (faq) => `
             <li class="bg-gray-100 p-4 rounded-lg">
               <details>
                 <summary class="font-semibold cursor-pointer text-lg text-gray-800">${faq.question}</summary>
                 <p class="mt-2 text-gray-600">${faq.answer}</p>
               </details>
             </li>
-          `).join('')}
+          `
+            )
+            .join("")}
         </ul>
-      </div>` : `
+      </div>`
+          : `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Preguntas frecuentes</h3>
         <p class="text-gray-700">Aún no hay preguntas frecuentes asociadas a este panorama.</p>
-      </div>`}
-      ${randomItem.related_articles ? `
+      </div>`
+      }
+      ${
+        randomItem.related_articles
+          ? `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Artículos relacionados</h3>
         <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          ${randomItem.related_articles.map(article => `
+          ${randomItem.related_articles
+            .map(
+              (article) => `
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
               <div class="bg-cover bg-center h-56 p-4" style="background-image: url(${article.image})"></div>
               <div class="p-4">
@@ -271,27 +384,38 @@ import Layout from "../layouts/Layout.astro";
                 <a href="${article.link}" target="_blank" class="text-blue-600 hover:text-blue-800">Leer más</a>
               </div>
             </div>
-          `).join('')}
+          `
+            )
+            .join("")}
         </div>
-      </div>` : `
+      </div>`
+          : `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Artículos relacionados</h3>
         <p class="text-gray-700">Aún no hay artículos relacionados a este panorama.</p>
-      </div>`}
-      ${randomItem.tags ? `
+      </div>`
+      }
+      ${
+        randomItem.tags
+          ? `
       <div class="p-5 border-t border-gray-200">
         <h3 class="text-2xl font-bold mb-6 text-gray-900">Tags</h3>
         <div class="mr-2 mb-2">
-          ${randomItem.tags.map(tag => `
+          ${randomItem.tags
+            .map(
+              (tag) => `
             <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">${tag}</span>
-          `).join('')}
+          `
+            )
+            .join("")}
         </div>
-      </div>` : `
+      </div>`
+          : `
       <div class="p-5 border border-gray-200">
         <h3 class="mb-2 text-lg font-bold text-gray-900">Tags</h3>
         <p class="text-gray-700">Aun no hay tags asociados a este panorama.</p>
-      </div>`}
+      </div>`
+      }
     `;
   }
-
 </script>
