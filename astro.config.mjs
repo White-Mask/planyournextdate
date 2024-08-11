@@ -5,5 +5,12 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
   site: 'https://planyournextdate.xyz',
-  integrations: [tailwind(), sitemap()],
+  integrations: [
+    tailwind(),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date('2024-08-11'),
+    })
+  ],
 });
