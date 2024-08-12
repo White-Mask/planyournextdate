@@ -129,15 +129,16 @@ const { title, description, canonical } = Astro.props;
     <Footer />
   </body>
 
-  <script>
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').then(() => {
-    }).catch((error) => {
-      console.error('Error al registrar el Service Worker:', error);
-    });
-  }
-</script>
-  </script>
+  <!--
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js').then(() => {
+        }).catch((error) => {
+          console.error('Error al registrar el Service Worker:', error);
+        });
+      }
+    </script>
+  -->
 </html>
 <style is:global>
   :root {

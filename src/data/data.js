@@ -263,18 +263,10 @@ export const data = [
   },
   //casera
   {
-    name: "Cocinar",
+    name: "cocinar",
     image:
       "https://www.fmdos.cl/wp-content/uploads/2017/08/GettyImages-98471686-1024x683.jpg",
     category: "casera",
-    description:
-      "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
-    tags: ["Casero", "Creativo", "Colaborativo"],
-
-    name: "Cocinar",
-    image:
-      "https://www.fmdos.cl/wp-content/uploads/2017/08/GettyImages-98471686-1024x683.jpg",
-    category: "caseras",
     description:
       "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
     locations: [
