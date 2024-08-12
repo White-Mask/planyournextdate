@@ -16,4 +16,4 @@ User-agent: Slurp
 Allow: /
 
 # Sitemaps
-Sitemap: https://planyournextdate.xyz/sitemap.xml
+Sitemap: https://planyournextdate.xyz/sitemap-index.xml
