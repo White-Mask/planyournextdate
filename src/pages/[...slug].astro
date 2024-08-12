@@ -24,11 +24,11 @@ const { name, item, description} = Astro.props;
 <Layout
   title={`Plan Your Next Date - ${name}`}
   description={description}
-  canonical=`https://planyournextdate.xyz/${item.category}/${name.toLowerCase().replace(/ /g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`
+  canonical=`/${item.category}/${name.toLowerCase().replace(/ /g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}`
 >
 <section class="max-w-[1024px] w-[95%] mx-auto mt-8">
     <article class="relative mb-8 rounded-lg border border-gray-200 shadow bg-white">
-      <img class="object-cover w-full rounded-t-lg h-96" src={item.image} alt="Ejemplo de {item.name} como experiencia"/>
+      <img class="object-cover w-full rounded-t-lg h-96" src={item.image} alt="Ejemplo de {item.name} como experiencia"loading="lazy"/>
       <p class="absolute right-[20px] top-[368px] text-white text-center px-3 py-1 rounded-lg bg-[#cf1c58]">
         {item.category.toUpperCase()[0].toUpperCase() + item.category.slice(1)}
       </p>
