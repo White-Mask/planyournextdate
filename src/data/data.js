@@ -1,4 +1,3 @@
-
 export const data = [
   //nocturnas
   {
@@ -33,7 +32,8 @@ export const data = [
       },
       {
         name: "Backroom Bar",
-        address: "Pérez Valenzuela 1470, 7500510 Providencia, Región Metropolitana",
+        address:
+          "Pérez Valenzuela 1470, 7500510 Providencia, Región Metropolitana",
         website: "https://backroom-chile.meitre.com/",
         price_range: "$5.000 - $10.000",
         reservation_required: true,
@@ -60,15 +60,21 @@ export const data = [
     ],
     related_articles: [
       {
-        title: "El circuito del jazz en Santiago: seis bares recomendados para escuchar música en vivo",
+        title:
+          "El circuito del jazz en Santiago: seis bares recomendados para escuchar música en vivo",
+        description: "",
         link: "https://www.theclinic.cl/2024/02/03/el-circuito-del-jazz-en-santiago-seis-bares-recomendados-para-escuchar-musica-en-vivo/",
-        image: "https://static.theclinic.cl/media/2024/02/01-035427_9qf6_IMG_0221-1200x900.jpeg",
+        image:
+          "https://static.theclinic.cl/media/2024/02/01-035427_9qf6_IMG_0221-1200x900.jpeg",
       },
       {
-        title: "Backroom Bar: el vibrante club de jazz que aterrizó en Santiago desde Buenos Aires",
+        title:
+          "Backroom Bar: el vibrante club de jazz que aterrizó en Santiago desde Buenos Aires",
+        description: "",
         link: "https://finde.latercera.com/bares/backroom-bar-santiago-jazz/",
-        image: "https://finde.latercera.com/wp-content/uploads/2024/03/Backroom-Bar-5-ok.jpg",
-      }
+        image:
+          "https://finde.latercera.com/wp-content/uploads/2024/03/Backroom-Bar-5-ok.jpg",
+      },
     ],
   },
   {
@@ -79,7 +85,6 @@ export const data = [
     description:
       "Una cena en un restaurante es una opción clásica para una cita. Pueden elegir un lugar romántico y acogedor, o uno más animado y divertido, según sus gustos. La comida y la bebida siempre son una buena excusa para disfrutar de una velada juntos.",
     tags: ["Romántico", "Gastronomía", "Cena", "Nocturno", "Gourmet"],
-
   },
   {
     name: "Bar",
@@ -106,64 +111,90 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un show de comedia es una opción divertida y entretenida para una cita nocturna. Pueden reír juntos, disfrutar de las actuaciones cómicas y compartir momentos de diversión y buen humor en un ambiente festivo y animado.",
-    tags: ["Comedia", "Humor", "Stand-Up", "Nocturno", "Diversión", "Entretenimiento"],
+    tags: [
+      "Comedia",
+      "Humor",
+      "Stand-Up",
+      "Nocturno",
+      "Diversión",
+      "Entretenimiento",
+    ],
   },
   {
-    "name": "Cine",
-    "image": "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
-    "category": "nocturna",
-    "description": "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
-    "duration": "2-3 horas",
-    "recommended_gear": "Ropa casual",
-    "locations": [
+    name: "Cine",
+    image:
+      "https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/UKVWSGPUORCE3OJXI7BQYN5YLY.jpg",
+    category: "nocturna",
+    description:
+      "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
+    duration: "2-3 horas",
+    recommended_gear: "Ropa casual",
+    locations: [
       {
-        "name": "Cine Hoyts",
-        "address": "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
-        "website": "https://www.hoyts.cl/",
-        "price_range": "$4.800 - $5.800",
-        "hours": "Varía según la cartelera",
-        "special_info": "Este cine cuenta con salas tradicionales, IMAX y 4DX, así como una amplia variedad de películas y horarios para elegir.",
-        "reservation_required": false,
-      },
-      {
-        name: "Cineplanet",
-        address: "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
-        website: "https://www.cineplanet.cl/",
-        price_range: "$4.200 - $5.300",
+        name: "Cine Hoyts",
+        address:
+          "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        website: "https://www.hoyts.cl/",
+        price_range: "$3.200 - $12.100",
         hours: "Varía según la cartelera",
-        special_info: "Cineplanet ofrece una experiencia de cine premium con salas VIP, 4DX y XD, así como una amplia variedad de películas y horarios para elegir.",
+        special_info:
+          "Este cine cuenta con salas tradicionales, IMAX y 4DX, así como una amplia variedad de películas y horarios para elegir.",
         reservation_required: false,
       },
       {
-        "name": "Cinemark",
-        address: "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
-        website: "https://www.cinemark.cl/",
-        price_range: "$7.000 - $13.000",
+        name: "Cineplanet",
+        address:
+          "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        website: "https://www.cineplanet.cl/",
+        price_range: "$4.800 - $9.000",
         hours: "Varía según la cartelera",
-        special_info: "Cinemark cuenta con salas tradicionales, XD y D-BOX, así como una amplia variedad de películas y horarios para elegir.",
+        special_info:
+          "Cineplanet ofrece una experiencia de cine premium con salas 2D, PRIME, XTREME, CONV, así como una amplia variedad de películas y horarios para elegir.",
+        reservation_required: false,
+      },
+      {
+        name: "Cinemark",
+        address:
+          "Depende de tu ubicación en Santiago, busca la sucursal más cercana en su sitio web",
+        website: "https://www.cinemark.cl/",
+        price_range: "$7.000 - $11.000",
+        hours: "Varía según la cartelera",
+        special_info:
+          "Cinemark cuenta con salas tradicionales, XD y D-BOX, así como una amplia variedad de películas y horarios para elegir.",
         reservation_required: false,
       },
       {
         name: "Cineteca Nacional de Chile",
-        address: "Plaza de la Ciudadanía 26, 8320000 Santiago, Región Metropolitana",
+        address:
+          "Plaza de la Ciudadanía 26, 8320000 Santiago, Región Metropolitana",
         website: "hthttps://www.cclm.cl/cineteca-nacional-de-chile/",
         price_range: "$1.250 - $4.000",
         hours: "Varía según la cartelera",
-        special_info: "La Cineteca Nacional de Chile ofrece una programación variada de cine chileno e internacional, con ciclos temáticos, retrospectivas y muestras especiales.",
+        special_info:
+          "La Cineteca Nacional de Chile ofrece una programación variada de cine chileno e internacional, con ciclos temáticos, retrospectivas y muestras especiales.",
         reservation_required: false,
       },
     ],
-    "faq": [
+    faq: [
       {
-        "question": "¿Hay descuentos para estudiantes o adultos mayores?",
-        "answer": "Sí, la mayoría de los cines ofrecen descuentos para estudiantes y adultos mayores."
+        question: "¿Hay descuentos para estudiantes o adultos mayores?",
+        answer:
+          "Sí, la mayoría de los cines ofrecen descuentos para estudiantes y adultos mayores.",
       },
       {
-        "question": "¿Se puede reservar asientos en los cines?",
-        "answer": "Sí, muchos cines permiten reservar asientos en línea o en taquilla."
-      }
+        question: "¿Se puede reservar asientos en los cines?",
+        answer:
+          "Sí, muchos cines permiten reservar asientos en línea o en taquilla.",
+      },
     ],
-    "tags": ["Cine", "Películas", "Entretenimiento", "Nocturno", "Tecnología IMAX", "4DX"]
+    tags: [
+      "Cine",
+      "Películas",
+      "Entretenimiento",
+      "Nocturno",
+      "Tecnología IMAX",
+      "4DX",
+    ],
   },
   //relajación
   {
@@ -173,7 +204,14 @@ export const data = [
     category: "desconectar",
     description:
       "Tomar un café juntos en una cafetería es una opción sencilla y relajada para una cita. Pueden disfrutar de una conversación tranquila y compartir momentos especiales mientras degustan una deliciosa bebida caliente o fría.",
-    tags: ["Café", "Cafetería", "Desconectar", "Brunch", "Espacio de Trabajo", "Especialidad"],
+    tags: [
+      "Café",
+      "Cafetería",
+      "Desconectar",
+      "Brunch",
+      "Espacio de Trabajo",
+      "Especialidad",
+    ],
   },
   {
     name: "Heladería",
@@ -198,7 +236,14 @@ export const data = [
     category: "desconectar",
     description:
       "Disfrutar de un brunch es una excelente opción para una cita relajada y deliciosa. Combina lo mejor del desayuno y el almuerzo con una variedad de opciones de comida, desde platos dulces hasta salados, en un ambiente acogedor y agradable.",
-    tags: ["Brunch", "Desayuno", "Almuerzo", "Gastronomía", "Opciones Vegetarianas", "Gourmet"],
+    tags: [
+      "Brunch",
+      "Desayuno",
+      "Almuerzo",
+      "Gastronomía",
+      "Opciones Vegetarianas",
+      "Gourmet",
+    ],
   },
   {
     name: "Terapia de Flotación",
@@ -207,7 +252,14 @@ export const data = [
     category: "desconectar",
     description:
       "La Terapia de Flotación es una actividad única que ofrece una experiencia de relajación profunda. Los participantes flotan en una solución de agua salina en un entorno libre de estímulos externos, lo que promueve la meditación, el alivio del estrés y el bienestar general.",
-    tags: ["Terapia de Flotación", "Relajación", "Bienestar", "Aislamiento Sensorial", "Salud", "Estrés"],
+    tags: [
+      "Terapia de Flotación",
+      "Relajación",
+      "Bienestar",
+      "Aislamiento Sensorial",
+      "Salud",
+      "Estrés",
+    ],
   },
   //casera
   {
@@ -218,6 +270,108 @@ export const data = [
     description:
       "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
     tags: ["Casero", "Creativo", "Colaborativo"],
+
+    name: "Cocinar",
+    image:
+      "https://www.fmdos.cl/wp-content/uploads/2017/08/GettyImages-98471686-1024x683.jpg",
+    category: "caseras",
+    description:
+      "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
+    locations: [
+      {
+        name: "Cocina de Casa",
+        address: "En casa",
+        price_range: "Variable, según los ingredientes",
+        hours: "Flexible, en cualquier momento",
+        reservation_required: false,
+        website: null,
+      },
+    ],
+    duration: "1-3 horas",
+    recommended_gear: "Utensilios de cocina, ingredientes frescos",
+    tags: ["Casero", "Creativo", "Colaborativo"],
+    faq: [
+      {
+        question: "¿Necesito ser un buen cocinero?",
+        answer: "No, lo importante es divertirse y disfrutar el proceso.",
+      },
+      {
+        question: "¿Qué platos son ideales para cocinar en pareja?",
+        answer:
+          "Platos como risotto, lasagna, sushi o pizza son opciones divertidas y colaborativas.",
+      },
+      {
+        question: "¿Qué hacer si algo sale mal?",
+        answer:
+          "No hay problema, lo importante es disfrutar del proceso y reír juntos.",
+      },
+    ],
+    related_articles: [
+      {
+        title: "Risotto de Champiñones y Trufa",
+        description:
+          "Un plato sofisticado y cremoso que requiere trabajo en equipo para conseguir la textura perfecta, ideal para crear un ambiente íntimo y elegante.",
+        image:
+          "https://mandolina.co/wp-content/uploads/2023/12/Risotto-de-champinones-selvaticos-y-trufa-blanca-1.png",
+        link: null, //"/risotto-recipe",
+      },
+      {
+        title: "Lasagna de Espinacas y Ricotta",
+        description:
+          "Una lasagna reconfortante que permite a la pareja trabajar juntas en cada capa, fomentando la colaboración y la creatividad.",
+        image:
+          "https://www.unileverfoodsolutions.es/dam/global-ufs/mcos/SPAIN/calcmenu/recipes/ES-recipes/general/lasa%C3%B1a-de-espinacas-con-ricotta-pi%C3%B1ones-y-pasas/main-header.jpg",
+        link: null, //"https://example.com/lasagna-recipe",
+      },
+      {
+        title: "Tagliatelle al Pesto de Albahaca",
+        description:
+          "Preparar pasta fresca desde cero es una actividad divertida y gratificante que resalta la creatividad y el trabajo conjunto.",
+        image:
+          "https://rana-cdn.thron.com/delivery/public/image/rana/c8561593-a8dd-4404-96ea-451d7af2f4c3/gg3i3t/std/0x0/ES-ricetta0-T_3T1A4388.jpg",
+        link: null, //"https://example.com/tagliatelle-recipe",
+      },
+      {
+        title: "Pizza Artesanal",
+        description:
+          "Hacer pizza permite a cada uno elegir sus ingredientes favoritos, disfrutando de una experiencia interactiva y sabrosa.",
+        image:
+          "https://www.gastroactitud.com/wp-content/uploads/2022/11/copia-de-97a0470.jpg",
+        link: null, //"https://example.com/pizza-recipe",
+      },
+      {
+        title: "Sushi Vegetariano",
+        description:
+          "Hacer sushi juntos es una experiencia creativa que requiere habilidad y paciencia, perfecta para una actividad colaborativa.",
+        image:
+          "https://www.hola.com/horizon/landscape/534544df4157-sushi-veggie-adob-1-t.jpg",
+        link: null, //"https://example.com/sushi-recipe",
+      },
+      {
+        title: "Gnocchi de Patata con Salsa de Tomate y Albahaca",
+        description:
+          "Hacer gnocchi desde cero es una actividad divertida que resalta el trabajo en equipo y la creatividad culinaria.",
+        image:
+          "https://www.demoslavueltaaldia.com/sites/default/files/noquis_de_patata_con_tomate_y_albahaca.jpg",
+        link: null, //"https://example.com/gnocchi-recipe",
+      },
+      {
+        title: "Raviolis de Calabaza y Salvia",
+        description:
+          "Rellenar raviolis caseros es una actividad delicada y creativa que permite disfrutar del proceso de cocinar juntos.",
+        image:
+          "https://content-cocina.lecturas.com/medio/2018/07/19/raviolis-de-calabaza-y-queso-azul-a-la-salvia_e265a244_800x800.jpg",
+        link: null, //"https://example.com/ravioli-recipe",
+      },
+      {
+        title: "Soufflé de Chocolate",
+        description:
+          "Un postre que es tanto desafiante como gratificante de preparar, ideal para culminar la noche de manera romántica.",
+        image:
+          "https://www.gourmet.cl/wp-content/uploads/2016/09/Souffle-de-chocolate.jpg",
+        link: null, //"https://example.com/souffle-recipe",
+      },
+    ],
   },
   {
     name: "Juegos de mesa",
@@ -226,7 +380,14 @@ export const data = [
     category: "casera",
     description:
       "Los juegos de mesa son una forma divertida y entretenida de pasar tiempo juntos en casa. Pueden elegir un juego clásico que ya conozcan o probar uno nuevo que les permita desafiar sus habilidades y competir de manera amistosa.",
-    tags: ["Juegos de Mesa", "Diversión", "Socializar", "Entretenimiento", "Torneos", "Cafetería"],
+    tags: [
+      "Juegos de Mesa",
+      "Diversión",
+      "Socializar",
+      "Entretenimiento",
+      "Torneos",
+      "Cafetería",
+    ],
   },
   {
     name: "Películas o series",
@@ -235,194 +396,323 @@ export const data = [
     category: "casera",
     description:
       "Ver películas o series juntos es una forma relajada y cómoda de disfrutar de la compañía mutua. Pueden elegir un género que les guste a ambos o explorar nuevas opciones para descubrir películas y series interesantes que puedan disfrutar juntos.",
-    tags: ["Películas", "Series", "Streaming", "Entretenimiento", "Maratón", "Cine en Casa"],
+    tags: [
+      "Películas",
+      "Series",
+      "Streaming",
+      "Entretenimiento",
+      "Maratón",
+      "Cine en Casa",
+    ],
   },
-    //naturaleza
-    {
-      name: "Picnic",
-      image:
-        "https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/styles/im_landscape_100/public/2024-04/pic-nic.jpg.webp?itok=jcLOYyHW",
-      category: "naturaleza",
-      description:
-        "Un picnic es perfecto para una cita porque ofrece un ambiente relajado y natural donde pueden disfrutar de la compañía mutua al aire libre. Compartir una comida en un parque o junto a un lago crea una atmósfera íntima y tranquila, ideal para charlar y conocer mejor a la otra persona.",
-      tags: ["Picnic", "Al Aire Libre", "Naturaleza", "Familia", "Romántico", "Parques"],
-    },
-    {
-      name: "Senderismo",
-      image:
-        "https://campinglafundicion.es/wp-content/uploads/2018/09/senderismo-1066x533.jpg",
-      category: "naturaleza",
-      description:
-        "El senderismo es una actividad saludable y relajante que les permite disfrutar de la naturaleza y desconectar del estrés diario. Pueden explorar rutas cercanas a la ciudad o adentrarse en la montaña para disfrutar de hermosos paisajes y compartir momentos especiales juntos.",
-      tags: ["Senderismo", "Naturaleza", "Aventura", "Montaña", "Caminata", "Rutas"],
-    },
-    {
-      name: "Jardín botánico",
-      image: "https://www.ed.cl/wp-content/uploads/2023/11/herbarium-1.jpg",
-      category: "naturaleza",
-      description:
-        "Visitar un jardín botánico es una opción relajante y enriquecedora para una cita. Pueden pasear entre plantas y flores, disfrutar de la belleza de la naturaleza y compartir momentos de tranquilidad y armonía en un entorno verde y sereno.",
-      tags: ["Jardín Botánico", "Naturaleza", "Conservación", "Educación Ambiental", "Biodiversidad", "Familia"],
-    },
-    {
-      name: "Zoológico",
-      image:
-        "https://finde.latercera.com/wp-content/uploads/2020/09/Zologico-ok-ok.jpg",
-      category: "naturaleza",
-      description:
-        "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
-      tags: ["Fauna", "Educativo", "Familiar"],
-    },
-    {
-      name: "Baño termal o tinaja",
-      image:
-        "https://sdlodge.cl/wp-content/uploads/2023/05/TINAJAS-EDITADO-1024x874.jpg",
-      category: "naturaleza",
-      description:
-        "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
-      tags: ["Baños Termales", "Tinaja", "Relajación", "Bienestar", "Naturaleza", "Spa"],
-    },
-    //cultura
-    {
-      name: "Museo",
-      image:
-        "https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/04/22/60817fe970aa9.jpeg",
-      category: "cultura",
-      description:
-        "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
-      "locations": [
-        {
-            "name": "Museo Nacional de Bellas Artes",
-            "address": "José Miguel de la Barra 650, 8320356 Santiago, Región Metropolitana",
-            "website": "https://www.mnba.gob.cl/",
-            "price_range": "Entrada gratuita",
-            "hours": "Martes a domingo de 10:00 a 18:45",
-            "special_info": "Este icónico museo alberga una vasta colección de arte chileno e internacional, con obras que datan desde la época colonial hasta la contemporaneidad. Además de sus exposiciones permanentes, cuenta con una programación constante de exposiciones temporales y actividades educativas.",
-            reservation_required: true,
-        },
-        {
-            "name": "Museo Interactivo Mirador (MIM)",
-            "address": "Av. Punta Arenas 6711, La Granja, Santiago, Chile",
-            "website": "https://www.mim.cl/",
-            "price_range": "$4.000 - $6.000 por persona",
-            "hours": "Martes a domingo de 9:30 a 18:30",
-            "special_info": "El MIM es un museo interactivo diseñado para que niños y adultos exploren la ciencia de manera divertida y educativa. Con más de 300 exhibiciones interactivas, talleres y actividades, es un destino ideal para familias y escuelas.",
-            reservation_required: true,
-        }
-      ],
-      "faq": [
-        {"question": "¿Es necesario reservar entradas con anticipación?", "answer": "Para la mayoría de los museos, no es necesario reservar con anticipación, pero se recomienda para visitas en grupo o durante eventos especiales."},
-        {"question": "¿Hay guías disponibles en los museos?", "answer": "Sí, muchos museos ofrecen guías y recorridos guiados, algunos de los cuales pueden requerir una reserva previa o un costo adicional."},
-        {"question": "¿Los museos tienen accesibilidad para personas con movilidad reducida?", "answer": "La mayoría de los museos están adaptados para personas con movilidad reducida, pero es recomendable verificar las facilidades específicas en cada caso."}
-      ],
-      tags: ["Museo", "Cultura", "Historia", "Arte", "Educación", "Exposiciones"],
-    },
-    {
-      name: "Taller de pintura",
-      image:
-        "https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2024/02/04113051/PAINT_IN_THE_DARK_MK1_AV-82_nznbjq_Optimized_Version_jn4yxc.jpg",
-      category: "cultura",
-      description:
-        "Tomar un taller de pintura juntos es una opción creativa y divertida para una cita. Pueden explorar su lado artístico, experimentar con colores y formas, y compartir momentos de inspiración y creatividad en un ambiente relajado y estimulante.",
-      tags: ["Taller de Pintura", "Arte", "Creatividad", "Expresión Artística", "Acuarela", "Óleo", "Técnicas Mixtas"],
-    },
-    {
-      name: "Teatro",
-      image:
-        "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
-      category: "cultura",
-      description:
-        "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
-      tags: ["Teatro", "Cultura", "Artes Escénicas", "Ópera", "Ballet", "Producciones Contemporáneas"],
-    },
-    {
-      name: "Planetario",
-      image:
-        "https://planetariochile.cl/wp-content/uploads/2024/06/Planetario-USACH-04.png",
-      category: "cultura",
-      description:
-        "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
-      tags: ["Planetario", "Astronomía", "Educación", "Espacio", "Proyección de Estrellas", "Ciencia"],
-    },
-    {
-      name: "Tour de Vinos",
-      image:
-        "https://rutadelvinocurico.cl/wp-content/uploads/2021/07/brindis-MT.jpg",
-      category: "cultura",
-      description:
-        "El Tour de Vinos proporciona una experiencia educativa y enriquecedora, donde los participantes aprenden sobre la historia de la viticultura, las técnicas de producción de vino y la degustación de diferentes variedades.",
-      tags: ["Tour de Vinos", "Degustación", "Viñas", "Bodegas", "Enología", "Cultura Vitivinícola"],
-    },
-    //aventura
-    {
-      name: "Parque de atracciones",
-      image:
-        "https://dfmas.df.cl/dfmas/site/artic/20220114/imag/foto_0000001220220114154948/Copia-de-Fantasilandia-_3.jpg",
-      category: "aventura",
-      description:
-        "Ir a un parque de atracciones es una opción emocionante y divertida para una cita. Pueden disfrutar de las atracciones, los juegos y las actividades juntos, compartir risas y emociones fuertes, y crear recuerdos inolvidables en un ambiente festivo y animado.",
-      tags: ["Parque de Atracciones", "Diversión", "Entretenimiento", "Montaña Rusa", "Familia", "Juegos Mecánicos"],
-    },
-    {
-      name: "PlayZone",
-      image:
-        "https://www.encancha.cl/resizer/v2/677IJM5MZ5FPHCRLS4NDQ3WQYY.png?smart=true&auth=0b2c8ebed42e08a604dfed7c26327ece6d614a3f006351d4ea144e0398016c24&width=1200&height=800",
-      category: "aventura",
-      description:
-        "Visitar un centro de entretenimiento es una opción versátil y divertida para una cita. Pueden disfrutar de una variedad de actividades como bolos, juegos de arcade, mini golf, karaoke, entre otros, y compartir risas y buenos momentos juntos en un ambiente animado y entretenido.",
-      tags: ["Happyland", "Entretenimiento", "Juegos Interactivos", "Arcade"],
-    },
-    {
-      name: "Camas Elásticas",
-      image: "https://coneypark.cl/wp-content/uploads/2022/03/jump-4.jpg",
-      category: "aventura",
-      description:
-        "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
-      tags: ["Camas Elásticas", "Trampolines", "Diversión", "Actividad Física", "Acrobacias"],
-    },
-    {
-      name: "Concierto",
-      image:
-        "https://fotografias.larazon.es/clipping/cmsimages01/2023/11/17/B509E9E7-1C8A-4542-8074-5554F9C9D421/conciertos_98.jpg?crop=1120,630,x41,y0&width=1900&height=1069&optimize=low&format=webply",
-      category: "aventura",
-      description:
-        "Ir a un concierto en vivo es una opción emocionante y divertida para una cita. Pueden disfrutar de la música en directo, bailar y cantar juntos, y compartir la emoción y la energía del espectáculo en un ambiente festivo y animado.",
-      tags: ["Concierto", "Música en Vivo", "Espectáculo", "Géneros Musicales", "Rock", "Pop", "Acústica"],
-    },
-    {
-      name: "Bowling",
-      image:
-        "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/06/27/_418137_1_649b3e18a74bc.jpg?d=1200x675",
-      category: "aventura",
-      description:
-        "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
-      tags: ["Bowling", "Entretenimiento", "Deporte", "Diversión", "Familia", "Eventos Sociales"],
-    },
-    {
-      name: "Patinaje en hielo",
-      image:
-        "https://www.cerogrado.cl/wp-content/uploads/2024/07/IMG_7463-scaled.jpg",
-      category: "aventura",
-      description:
-        "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
-      tags: ["Patinaje en Hielo", "Deporte", "Entretenimiento", "Diversión", "Actividad Física", "Invierno"],
-    },
-    {
-      name: "Karting",
-      image:
-        "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/07/14/419844_2_64b1ac83b0055.jpg",
-      category: "aventura",
-      description:
-        "El karting es una actividad emocionante y competitiva que les permite disfrutar de la velocidad y la adrenalina juntos. Pueden competir en la pista, probar sus habilidades de conducción y ver quién es el más rápido en completar el recorrido.",
-      tags: ["Karting", "Velocidad", "Competencia", "Adrenalina", "Deporte", "Entretenimiento"],
-    },
-    {
-      name: "Escape Room",
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/a/a8/Escape_Room_-_%22The_Expedition%22_%28Escape_Quest_Bethesda%29.jpg",
-      category: "aventura",
-      description:
-        "El Escape Room es una actividad emocionante y desafiante donde los participantes deben resolver acertijos y pistas para escapar de una habitación temática en un tiempo limitado. Es una gran oportunidad para trabajar en equipo y disfrutar de una experiencia llena de misterio y diversión.",
-      tags: ["Escape Room", "Aventura", "Desafío Mental", "Diversión", "Acertijos", "Experiencia Inmersiva"],
-    },
+  //naturaleza
+  {
+    name: "Picnic",
+    image:
+      "https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/styles/im_landscape_100/public/2024-04/pic-nic.jpg.webp?itok=jcLOYyHW",
+    category: "naturaleza",
+    description:
+      "Un picnic es perfecto para una cita porque ofrece un ambiente relajado y natural donde pueden disfrutar de la compañía mutua al aire libre. Compartir una comida en un parque o junto a un lago crea una atmósfera íntima y tranquila, ideal para charlar y conocer mejor a la otra persona.",
+    tags: [
+      "Picnic",
+      "Al Aire Libre",
+      "Naturaleza",
+      "Familia",
+      "Romántico",
+      "Parques",
+    ],
+  },
+  {
+    name: "Senderismo",
+    image:
+      "https://campinglafundicion.es/wp-content/uploads/2018/09/senderismo-1066x533.jpg",
+    category: "naturaleza",
+    description:
+      "El senderismo es una actividad saludable y relajante que les permite disfrutar de la naturaleza y desconectar del estrés diario. Pueden explorar rutas cercanas a la ciudad o adentrarse en la montaña para disfrutar de hermosos paisajes y compartir momentos especiales juntos.",
+    tags: [
+      "Senderismo",
+      "Naturaleza",
+      "Aventura",
+      "Montaña",
+      "Caminata",
+      "Rutas",
+    ],
+  },
+  {
+    name: "Jardín botánico",
+    image: "https://www.ed.cl/wp-content/uploads/2023/11/herbarium-1.jpg",
+    category: "naturaleza",
+    description:
+      "Visitar un jardín botánico es una opción relajante y enriquecedora para una cita. Pueden pasear entre plantas y flores, disfrutar de la belleza de la naturaleza y compartir momentos de tranquilidad y armonía en un entorno verde y sereno.",
+    tags: [
+      "Jardín Botánico",
+      "Naturaleza",
+      "Conservación",
+      "Educación Ambiental",
+      "Biodiversidad",
+      "Familia",
+    ],
+  },
+  {
+    name: "Zoológico",
+    image:
+      "https://finde.latercera.com/wp-content/uploads/2020/09/Zologico-ok-ok.jpg",
+    category: "naturaleza",
+    description:
+      "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
+    tags: ["Fauna", "Educativo", "Familiar"],
+  },
+  {
+    name: "Baño termal o tinaja",
+    image:
+      "https://sdlodge.cl/wp-content/uploads/2023/05/TINAJAS-EDITADO-1024x874.jpg",
+    category: "naturaleza",
+    description:
+      "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
+    tags: [
+      "Baños Termales",
+      "Tinaja",
+      "Relajación",
+      "Bienestar",
+      "Naturaleza",
+      "Spa",
+    ],
+  },
+  //cultura
+  {
+    name: "Museo",
+    image:
+      "https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/04/22/60817fe970aa9.jpeg",
+    category: "cultura",
+    description:
+      "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
+    locations: [
+      {
+        name: "Museo Nacional de Bellas Artes",
+        address:
+          "José Miguel de la Barra 650, 8320356 Santiago, Región Metropolitana",
+        website: "https://www.mnba.gob.cl/",
+        price_range: "Entrada gratuita",
+        hours: "Martes a domingo de 10:00 a 18:45",
+        special_info:
+          "Este icónico museo alberga una vasta colección de arte chileno e internacional, con obras que datan desde la época colonial hasta la contemporaneidad. Además de sus exposiciones permanentes, cuenta con una programación constante de exposiciones temporales y actividades educativas.",
+        reservation_required: true,
+      },
+      {
+        name: "Museo Interactivo Mirador (MIM)",
+        address: "Av. Punta Arenas 6711, La Granja, Santiago, Chile",
+        website: "https://www.mim.cl/",
+        price_range: "$4.000 - $6.000 por persona",
+        hours: "Martes a domingo de 9:30 a 18:30",
+        special_info:
+          "El MIM es un museo interactivo diseñado para que niños y adultos exploren la ciencia de manera divertida y educativa. Con más de 300 exhibiciones interactivas, talleres y actividades, es un destino ideal para familias y escuelas.",
+        reservation_required: true,
+      },
+    ],
+    faq: [
+      {
+        question: "¿Es necesario reservar entradas con anticipación?",
+        answer:
+          "Para la mayoría de los museos, no es necesario reservar con anticipación, pero se recomienda para visitas en grupo o durante eventos especiales.",
+      },
+      {
+        question: "¿Hay guías disponibles en los museos?",
+        answer:
+          "Sí, muchos museos ofrecen guías y recorridos guiados, algunos de los cuales pueden requerir una reserva previa o un costo adicional.",
+      },
+      {
+        question:
+          "¿Los museos tienen accesibilidad para personas con movilidad reducida?",
+        answer:
+          "La mayoría de los museos están adaptados para personas con movilidad reducida, pero es recomendable verificar las facilidades específicas en cada caso.",
+      },
+    ],
+    tags: ["Museo", "Cultura", "Historia", "Arte", "Educación", "Exposiciones"],
+  },
+  {
+    name: "Taller de pintura",
+    image:
+      "https://offloadmedia.feverup.com/parissecret.com/wp-content/uploads/2024/02/04113051/PAINT_IN_THE_DARK_MK1_AV-82_nznbjq_Optimized_Version_jn4yxc.jpg",
+    category: "cultura",
+    description:
+      "Tomar un taller de pintura juntos es una opción creativa y divertida para una cita. Pueden explorar su lado artístico, experimentar con colores y formas, y compartir momentos de inspiración y creatividad en un ambiente relajado y estimulante.",
+    tags: [
+      "Taller de Pintura",
+      "Arte",
+      "Creatividad",
+      "Expresión Artística",
+      "Acuarela",
+      "Óleo",
+      "Técnicas Mixtas",
+    ],
+  },
+  {
+    name: "Teatro",
+    image:
+      "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
+    category: "cultura",
+    description:
+      "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
+    tags: [
+      "Teatro",
+      "Cultura",
+      "Artes Escénicas",
+      "Ópera",
+      "Ballet",
+      "Producciones Contemporáneas",
+    ],
+  },
+  {
+    name: "Planetario",
+    image:
+      "https://planetariochile.cl/wp-content/uploads/2024/06/Planetario-USACH-04.png",
+    category: "cultura",
+    description:
+      "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
+    tags: [
+      "Planetario",
+      "Astronomía",
+      "Educación",
+      "Espacio",
+      "Proyección de Estrellas",
+      "Ciencia",
+    ],
+  },
+  {
+    name: "Tour de Vinos",
+    image:
+      "https://rutadelvinocurico.cl/wp-content/uploads/2021/07/brindis-MT.jpg",
+    category: "cultura",
+    description:
+      "El Tour de Vinos proporciona una experiencia educativa y enriquecedora, donde los participantes aprenden sobre la historia de la viticultura, las técnicas de producción de vino y la degustación de diferentes variedades.",
+    tags: [
+      "Tour de Vinos",
+      "Degustación",
+      "Viñas",
+      "Bodegas",
+      "Enología",
+      "Cultura Vitivinícola",
+    ],
+  },
+  //aventura
+  {
+    name: "Parque de atracciones",
+    image:
+      "https://dfmas.df.cl/dfmas/site/artic/20220114/imag/foto_0000001220220114154948/Copia-de-Fantasilandia-_3.jpg",
+    category: "aventura",
+    description:
+      "Ir a un parque de atracciones es una opción emocionante y divertida para una cita. Pueden disfrutar de las atracciones, los juegos y las actividades juntos, compartir risas y emociones fuertes, y crear recuerdos inolvidables en un ambiente festivo y animado.",
+    tags: [
+      "Parque de Atracciones",
+      "Diversión",
+      "Entretenimiento",
+      "Montaña Rusa",
+      "Familia",
+      "Juegos Mecánicos",
+    ],
+  },
+  {
+    name: "PlayZone",
+    image:
+      "https://www.encancha.cl/resizer/v2/677IJM5MZ5FPHCRLS4NDQ3WQYY.png?smart=true&auth=0b2c8ebed42e08a604dfed7c26327ece6d614a3f006351d4ea144e0398016c24&width=1200&height=800",
+    category: "aventura",
+    description:
+      "Visitar un centro de entretenimiento es una opción versátil y divertida para una cita. Pueden disfrutar de una variedad de actividades como bolos, juegos de arcade, mini golf, karaoke, entre otros, y compartir risas y buenos momentos juntos en un ambiente animado y entretenido.",
+    tags: ["Happyland", "Entretenimiento", "Juegos Interactivos", "Arcade"],
+  },
+  {
+    name: "Camas Elásticas",
+    image: "https://coneypark.cl/wp-content/uploads/2022/03/jump-4.jpg",
+    category: "aventura",
+    description:
+      "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
+    tags: [
+      "Camas Elásticas",
+      "Trampolines",
+      "Diversión",
+      "Actividad Física",
+      "Acrobacias",
+    ],
+  },
+  {
+    name: "Concierto",
+    image:
+      "https://fotografias.larazon.es/clipping/cmsimages01/2023/11/17/B509E9E7-1C8A-4542-8074-5554F9C9D421/conciertos_98.jpg?crop=1120,630,x41,y0&width=1900&height=1069&optimize=low&format=webply",
+    category: "aventura",
+    description:
+      "Ir a un concierto en vivo es una opción emocionante y divertida para una cita. Pueden disfrutar de la música en directo, bailar y cantar juntos, y compartir la emoción y la energía del espectáculo en un ambiente festivo y animado.",
+    tags: [
+      "Concierto",
+      "Música en Vivo",
+      "Espectáculo",
+      "Géneros Musicales",
+      "Rock",
+      "Pop",
+      "Acústica",
+    ],
+  },
+  {
+    name: "Bowling",
+    image:
+      "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/06/27/_418137_1_649b3e18a74bc.jpg?d=1200x675",
+    category: "aventura",
+    description:
+      "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
+    tags: [
+      "Bowling",
+      "Entretenimiento",
+      "Deporte",
+      "Diversión",
+      "Familia",
+      "Eventos Sociales",
+    ],
+  },
+  {
+    name: "Patinaje en hielo",
+    image:
+      "https://www.cerogrado.cl/wp-content/uploads/2024/07/IMG_7463-scaled.jpg",
+    category: "aventura",
+    description:
+      "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
+    tags: [
+      "Patinaje en Hielo",
+      "Deporte",
+      "Entretenimiento",
+      "Diversión",
+      "Actividad Física",
+      "Invierno",
+    ],
+  },
+  {
+    name: "Karting",
+    image:
+      "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/07/14/419844_2_64b1ac83b0055.jpg",
+    category: "aventura",
+    description:
+      "El karting es una actividad emocionante y competitiva que les permite disfrutar de la velocidad y la adrenalina juntos. Pueden competir en la pista, probar sus habilidades de conducción y ver quién es el más rápido en completar el recorrido.",
+    tags: [
+      "Karting",
+      "Velocidad",
+      "Competencia",
+      "Adrenalina",
+      "Deporte",
+      "Entretenimiento",
+    ],
+  },
+  {
+    name: "Escape Room",
+    image:
+      "https://upload.wikimedia.org/wikipedia/commons/a/a8/Escape_Room_-_%22The_Expedition%22_%28Escape_Quest_Bethesda%29.jpg",
+    category: "aventura",
+    description:
+      "El Escape Room es una actividad emocionante y desafiante donde los participantes deben resolver acertijos y pistas para escapar de una habitación temática en un tiempo limitado. Es una gran oportunidad para trabajar en equipo y disfrutar de una experiencia llena de misterio y diversión.",
+    tags: [
+      "Escape Room",
+      "Aventura",
+      "Desafío Mental",
+      "Diversión",
+      "Acertijos",
+      "Experiencia Inmersiva",
+    ],
+  },
 ];

@@ -56,7 +56,11 @@ const { name, item, description} = Astro.props;
               <p class="text-gray-700 ml-12 mb-3">{location.address}</p>
               <p class="text-gray-700 ml-12 mb-3">{location.price_range}</p>
               <p class="text-gray-700 ml-12 mb-3">{location.reservation_required ? "Reserva requerida" : "Sin reserva"}</p>
-              <a href=`${location.website}` target="_blank" class="text-blue-600 hover:text-blue-800 ml-12">Visitar sitio web</a>
+              {
+                location.website?
+                  <a href=`${location.website}` target="_blank" class="text-blue-600 hover:text-blue-800 ml-12">Visitar sitio web</a>
+                : ""
+              }
             </li>
           
             )
@@ -102,7 +106,16 @@ const { name, item, description} = Astro.props;
               <div class="bg-cover bg-center h-56 p-4" style=`background-image: url(${article.image})`></div>
               <div class="p-4">
                 <h2 class="text-lg font-bold mb-2">{article.title}</h2>
-                <a href=`${article.link}` target="_blank" class="text-blue-600 hover:text-blue-800">Leer más</a>
+                {
+                  article.description?
+                    <p class="text-gray-700 mb-2">Por {article.description}</p>
+                  : ""
+                }
+                {
+                  article.link?
+                    <a href=`${article.link}` target="_blank" class="text-blue-600 hover:text-blue-800">Leer más</a>
+                  : ""
+                }
               </div>
             </div>
             )}
