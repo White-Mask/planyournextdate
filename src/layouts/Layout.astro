@@ -13,57 +13,6 @@ const { title, description, url = Astro.url  } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <script is:inline type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Plan Your Next Date - Actividades para Parejas y Amigos en Santiago, Chile",
-        "url": "https://planyournextdate.xyz",
-        "logo": "https://planyournextdate.xyz/favicon.webp",
-        "description": "En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "areaServed": "CL",
-          "availableLanguage": ["Spanish"]
-        }
-      }
-    </script>
-
-    <script is:inline type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "¿Qué tipos de actividades recomiendan en Plan Your Next Date?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Te damos una amplia gama de actividades que incluyen naturaleza, cultura, aventura, nocturnas, caseras y opciones para desconectar, entre otras."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Se necesita reservar en todos los locales?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No, solo en algunos locales como La Fabbrica y Backroom Bar es necesario realizar una reserva previa."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Hay descuentos especiales?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Sí, puedes obtener entrada especial en Thelonious para el segundo concierto de viernes y sábado."
-            }
-          }
-        ]
-      }
-    </script>
-
-    
-
     <meta name="application-name" content="Plan Your Next Date" />
     <meta
       name="keywords"
@@ -82,7 +31,9 @@ const { title, description, url = Astro.url  } = Astro.props;
     <meta property="og:locale" content="es_ES" />
 
     <meta name="robots" content="index, follow" />
-    <meta name="googlebot" content="index, follow" />
+    <!--
+      <meta name="googlebot" content="index, follow" />
+    -->
     <meta
       name="google-site-verification"
       content="vflthyvgzV_DQ7T_EE5qHtFUixDnY4fA3vFYz3Ts-mc"
@@ -93,6 +44,7 @@ const { title, description, url = Astro.url  } = Astro.props;
     <meta name="msapplication-config" content="/browserconfig.xml" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="theme-color" content="#c2185b" />
     <!--
       <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -101,7 +53,6 @@ const { title, description, url = Astro.url  } = Astro.props;
       <meta name="msapplication-TileColor" content="#c2185b" />
       <meta name="msapplication-TileImage" content="/mstile-144x144.png" />
     -->
-    <meta name="theme-color" content="#c2185b" />
   </head>
   <body class="flex flex-col min-h-screen min-w-[344px] w-full m-0 p-0">
     <section class="py-8 md:pl-16 pl-14 bg-[#c2185b]">
