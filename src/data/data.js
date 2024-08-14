@@ -7,6 +7,8 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un club de jazz es una opción elegante y sofisticada para una cita nocturna. Pueden disfrutar de la música en vivo, la atmósfera íntima y acogedora, y compartir momentos especiales mientras se dejan llevar por los ritmos suaves y envolventes del jazz.",
+    shortDescription: "Vive una noche especial en un club de jazz. Disfruta de música en vivo y un ambiente acogedor, ideal para una cita especial en Santiago de Chile.",
+    slug: "jazz-club",
     locations: [
       {
         name: "La Fabbrica - Club de Jazz",
@@ -84,6 +86,8 @@ export const data = [
     category: "nocturna",
     description:
       "Una cena en un restaurante es una opción clásica para una cita. Pueden elegir un lugar romántico y acogedor, o uno más animado y divertido, según sus gustos. La comida y la bebida siempre son una buena excusa para disfrutar de una velada juntos.",
+    shortDescription: "Disfruta de una cena romántica en un restaurante. Elige entre ambientes acogedores o animados para una velada nocturna llena de gastronomía y momentos especiales.",
+    slug: "restaurante",
     tags: ["Romántico", "Gastronomía", "Cena", "Nocturno", "Gourmet"],
   },
   {
@@ -93,6 +97,8 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un bar es una opción relajada y divertida para una cita nocturna. Pueden disfrutar de una copa juntos en un ambiente animado y acogedor, y compartir risas y buenos momentos mientras degustan sus bebidas favoritas.",
+    shortDescription: "Disfruta de una salida nocturna relajada en un bar con cócteles. Comparte risas y buenos momentos con amigos en un ambiente acogedor mientras degustan sus bebidas favoritas.",
+    slug: "bar",
     tags: ["Cócteles", "Bar Nocturno", "Ambiente", "Salidas con Amigos"],
   },
   {
@@ -102,6 +108,8 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a una discoteca es una opción divertida y animada para una cita nocturna. Pueden bailar juntos, disfrutar de la música y la atmósfera festiva, y compartir la emoción y la energía de la pista de baile en un ambiente vibrante y lleno de vida.",
+    shortDescription: "Vive una noche llena de energía en una discoteca. Disfruta de la música, el baile y la atmósfera vibrante, mientras te sumerges en la vida nocturna con DJ en vivo y eventos especiales.",
+    slug: "discoteca",
     tags: ["Discoteca", "Música", "Baile", "Vida Nocturna", "DJ", "Eventos"],
   },
   {
@@ -111,6 +119,8 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un show de comedia es una opción divertida y entretenida para una cita nocturna. Pueden reír juntos, disfrutar de las actuaciones cómicas y compartir momentos de diversión y buen humor en un ambiente festivo y animado.",
+    shortDescription: "Disfruta de una noche llena de risas en un show de comedia. Relájate y pasa un buen rato con actuaciones cómicas, stand-up y mucho humor en un ambiente festivo y lleno de entretenimiento.",
+    slug: "show-de-comedia",
     tags: [
       "Comedia",
       "Humor",
@@ -127,6 +137,8 @@ export const data = [
     category: "nocturna",
     description:
       "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
+    shortDescription: "Una visita al cine es una opción clásica para una cita. Disfruten juntos de una película en un ambiente cómodo y relajado, compartiendo palomitas y momentos especiales.",
+    slug: "cine",
     duration: "2-3 horas",
     recommended_gear: "Ropa casual",
     locations: [
@@ -204,6 +216,8 @@ export const data = [
     category: "desconectar",
     description:
       "Tomar un café juntos en una cafetería es una opción sencilla y relajada para una cita. Pueden disfrutar de una conversación tranquila y compartir momentos especiales mientras degustan una deliciosa bebida caliente o fría.",
+    shortDescription: "Disfrutar de un café en una cafetería es una forma simple y relajada de compartir una conversación tranquila, mientras saborean una bebida deliciosa en un ambiente acogedor.",
+    slug: "cafeteria",
     tags: [
       "Café",
       "Cafetería",
@@ -219,6 +233,8 @@ export const data = [
     category: "desconectar",
     description:
       "Ir a una heladería es una opción refrescante y dulce para una cita. Pueden disfrutar de un helado juntos en un ambiente relajado y cómodo, y compartir risas y buenos momentos mientras degustan sabores deliciosos y variados.",
+    shortDescription: "Visitar una heladería es una opción refrescante y deliciosa para una cita. Disfruten de sabores artesanales y variados en un ambiente relajado, perfecto para compartir momentos dulces juntos.",
+    slug: "heladeria",
     tags: ["Helados", "Heladería", "Postre", "Verano", "Dulce", "Artesanal"],
   },
   {
@@ -227,6 +243,8 @@ export const data = [
     category: "desconectar",
     description:
       "Recibir un masaje juntos es una opción relajante y reconfortante para una cita. Pueden disfrutar de un masaje relajante, descontracturante o terapéutico, y compartir momentos de bienestar y cuidado personal en un ambiente tranquilo y acogedor.",
+    shortDescription: "Disfruta de una cita relajante con un masaje en pareja. Elige entre opciones terapéuticas o de bienestar en un ambiente acogedor, ideal para compartir momentos de salud y relajación.",
+    slug: "masaje",
     tags: ["Masajes", "Relajación", "Bienestar", "Spa", "Terapéutico", "Salud"],
   },
   {
@@ -236,6 +254,8 @@ export const data = [
     category: "desconectar",
     description:
       "Disfrutar de un brunch es una excelente opción para una cita relajada y deliciosa. Combina lo mejor del desayuno y el almuerzo con una variedad de opciones de comida, desde platos dulces hasta salados, en un ambiente acogedor y agradable.",
+    shortDescription: "El brunch es una opción deliciosa y relajada para una cita. Disfruta lo mejor del desayuno y el almuerzo, con opciones gourmet y vegetarianas en un ambiente acogedor.",
+    slug: "brunch",
     tags: [
       "Brunch",
       "Desayuno",
@@ -252,6 +272,8 @@ export const data = [
     category: "desconectar",
     description:
       "La Terapia de Flotación es una actividad única que ofrece una experiencia de relajación profunda. Los participantes flotan en una solución de agua salina en un entorno libre de estímulos externos, lo que promueve la meditación, el alivio del estrés y el bienestar general.",
+    shortDescription: "Disfruta de la Terapia de Flotación para una relajación profunda. Flota en agua salina, desconectado de estímulos externos, promoviendo bienestar, alivio del estrés y meditación.",
+    slug: "terapia-de-flotacion",
     tags: [
       "Terapia de Flotación",
       "Relajación",
@@ -263,12 +285,14 @@ export const data = [
   },
   //casera
   {
-    name: "cocinar",
+    name: "Cocinar",
     image:
       "https://www.fmdos.cl/wp-content/uploads/2017/08/GettyImages-98471686-1024x683.jpg",
     category: "casera",
     description:
       "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
+    shortDescription: "Cocinar juntos es una actividad divertida y colaborativa que permite trabajar en equipo. Disfruta creando nuevas recetas o preparando tus platos favoritos en un ambiente cómodo y relajado.",
+    slug: "cocinar",
     locations: [
       {
         name: "Cocina de Casa",
@@ -372,6 +396,8 @@ export const data = [
     category: "casera",
     description:
       "Los juegos de mesa son una forma divertida y entretenida de pasar tiempo juntos en casa. Pueden elegir un juego clásico que ya conozcan o probar uno nuevo que les permita desafiar sus habilidades y competir de manera amistosa.",
+    shortDescription: "Los juegos de mesa son una forma divertida de compartir tiempo juntos en casa. Elige un clásico o descubre algo nuevo mientras disfrutas de una competencia amistosa y entretenida.",
+    slug: "juegos-de-mesa",
     tags: [
       "Juegos de Mesa",
       "Diversión",
@@ -388,6 +414,8 @@ export const data = [
     category: "casera",
     description:
       "Ver películas o series juntos es una forma relajada y cómoda de disfrutar de la compañía mutua. Pueden elegir un género que les guste a ambos o explorar nuevas opciones para descubrir películas y series interesantes que puedan disfrutar juntos.",
+    shortDescription: "Ver películas o series juntos es una forma cómoda y relajada de disfrutar en casa. Elige un género favorito o explora nuevas opciones para disfrutar de una maratón en streaming.",
+    slug: "peliculas-o-series",
     tags: [
       "Películas",
       "Series",
@@ -405,6 +433,8 @@ export const data = [
     category: "naturaleza",
     description:
       "Un picnic es perfecto para una cita porque ofrece un ambiente relajado y natural donde pueden disfrutar de la compañía mutua al aire libre. Compartir una comida en un parque o junto a un lago crea una atmósfera íntima y tranquila, ideal para charlar y conocer mejor a la otra persona.",
+    shortDescription: "Un picnic es una cita ideal al aire libre, perfecta para disfrutar de la naturaleza y compartir una comida en un entorno tranquilo, ya sea en un parque o junto a un lago.",
+    slug: "picnic",
     tags: [
       "Picnic",
       "Al Aire Libre",
@@ -421,6 +451,8 @@ export const data = [
     category: "naturaleza",
     description:
       "El senderismo es una actividad saludable y relajante que les permite disfrutar de la naturaleza y desconectar del estrés diario. Pueden explorar rutas cercanas a la ciudad o adentrarse en la montaña para disfrutar de hermosos paisajes y compartir momentos especiales juntos.",
+    shortDescription: "El senderismo es una actividad saludable que les permite disfrutar de la naturaleza y desconectar del estrés. Exploren rutas cercanas o aventúrense en la montaña para compartir paisajes únicos.",
+    slug: "senderismo",
     tags: [
       "Senderismo",
       "Naturaleza",
@@ -436,6 +468,8 @@ export const data = [
     category: "naturaleza",
     description:
       "Visitar un jardín botánico es una opción relajante y enriquecedora para una cita. Pueden pasear entre plantas y flores, disfrutar de la belleza de la naturaleza y compartir momentos de tranquilidad y armonía en un entorno verde y sereno.",
+    shortDescription: "Visitar un jardín botánico es una cita relajante y enriquecedora. Paseen entre plantas y flores, disfrutando de la naturaleza en un entorno sereno y lleno de biodiversidad.",
+    slug: "jardin-botanico",
     tags: [
       "Jardín Botánico",
       "Naturaleza",
@@ -452,6 +486,8 @@ export const data = [
     category: "naturaleza",
     description:
       "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
+    shortDescription: "Visitar un zoológico es una opción educativa y divertida para una cita. Exploren áreas llenas de fauna, aprendan sobre los animales y disfruten de la naturaleza en compañía.",
+    slug: "zoologico",
     tags: ["Fauna", "Educativo", "Familiar"],
   },
   {
@@ -461,6 +497,8 @@ export const data = [
     category: "naturaleza",
     description:
       "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
+    shortDescription: "Disfruta de un baño termal en pareja, una opción relajante y terapéutica. Sumérgete en aguas termales o una tinaja al aire libre, rodeado de naturaleza y bienestar.",
+    slug: "bano-termal-o-tinaja",
     tags: [
       "Baños Termales",
       "Tinaja",
@@ -478,6 +516,8 @@ export const data = [
     category: "cultura",
     description:
       "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
+    shortDescription: "Visitar un museo es una actividad cultural enriquecedora. Explora exposiciones de arte, historia y ciencia, mientras aprendes y compartes impresiones en un entorno educativo.",
+    slug: "museo",
     locations: [
       {
         name: "Museo Nacional de Bellas Artes",
@@ -528,6 +568,8 @@ export const data = [
     category: "cultura",
     description:
       "Tomar un taller de pintura juntos es una opción creativa y divertida para una cita. Pueden explorar su lado artístico, experimentar con colores y formas, y compartir momentos de inspiración y creatividad en un ambiente relajado y estimulante.",
+    shortDescription: "Tomar un taller de pintura es una cita creativa y divertida. Exploren su lado artístico mientras experimentan con colores y técnicas en un ambiente relajado y lleno de inspiración.",
+    slug: "taller-de-pintura",
     tags: [
       "Taller de Pintura",
       "Arte",
@@ -545,6 +587,8 @@ export const data = [
     category: "cultura",
     description:
       "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
+    shortDescription: "Ir al teatro es una cita cultural y emocionante. Disfruta de obras, óperas o ballets y comparte momentos de asombro mientras te sumerges en la magia del escenario.",
+    slug: "teatro",
     tags: [
       "Teatro",
       "Cultura",
@@ -561,6 +605,8 @@ export const data = [
     category: "cultura",
     description:
       "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
+    shortDescription: "Visitar un planetario es una cita educativa y fascinante. Exploren el universo, aprendan sobre estrellas y planetas, y disfruten de una proyección estelar en un entorno acogedor.",
+    slug: "planetario",
     tags: [
       "Planetario",
       "Astronomía",
@@ -577,6 +623,8 @@ export const data = [
     category: "cultura",
     description:
       "El Tour de Vinos proporciona una experiencia educativa y enriquecedora, donde los participantes aprenden sobre la historia de la viticultura, las técnicas de producción de vino y la degustación de diferentes variedades.",
+    shortDescription: "El Tour de Vinos ofrece una experiencia educativa donde aprendes sobre la viticultura, técnicas de producción, y disfrutas de la degustación de diversas variedades en viñas y bodegas.",
+    slug: "tour-de-vinos",
     tags: [
       "Tour de Vinos",
       "Degustación",
@@ -594,6 +642,8 @@ export const data = [
     category: "aventura",
     description:
       "Ir a un parque de atracciones es una opción emocionante y divertida para una cita. Pueden disfrutar de las atracciones, los juegos y las actividades juntos, compartir risas y emociones fuertes, y crear recuerdos inolvidables en un ambiente festivo y animado.",
+    shortDescription: "Ir a un parque de atracciones es una cita emocionante y divertida. Disfruta de montañas rusas, juegos mecánicos y actividades, creando recuerdos inolvidables en un ambiente festivo.",
+    slug: "parque-de-atracciones",
     tags: [
       "Parque de Atracciones",
       "Diversión",
@@ -610,6 +660,8 @@ export const data = [
     category: "aventura",
     description:
       "Visitar un centro de entretenimiento es una opción versátil y divertida para una cita. Pueden disfrutar de una variedad de actividades como bolos, juegos de arcade, mini golf, karaoke, entre otros, y compartir risas y buenos momentos juntos en un ambiente animado y entretenido.",
+    shortDescription: "Visitar un centro de entretenimiento es una cita versátil y divertida. Disfruten de actividades como bolos, arcade, mini golf y karaoke, compartiendo risas en un ambiente animado.",
+    slug: "playzone",
     tags: ["Happyland", "Entretenimiento", "Juegos Interactivos", "Arcade"],
   },
   {
@@ -618,6 +670,8 @@ export const data = [
     category: "aventura",
     description:
       "Ir a un parque de saltos es una opción emocionante y divertida para una cita. Pueden disfrutar de la adrenalina y la emoción de saltar en trampolines, camas elásticas o piscinas de espuma, y compartir risas y buenos momentos mientras se divierten juntos en un ambiente dinámico y lleno de energía.",
+    shortDescription: "Ir a un parque de saltos es una cita llena de adrenalina. Disfruten saltando en camas elásticas, trampolines o piscinas de espuma, compartiendo risas y diversión en un ambiente dinámico.",
+    slug: "camas-elasticas",
     tags: [
       "Camas Elásticas",
       "Trampolines",
@@ -633,6 +687,8 @@ export const data = [
     category: "aventura",
     description:
       "Ir a un concierto en vivo es una opción emocionante y divertida para una cita. Pueden disfrutar de la música en directo, bailar y cantar juntos, y compartir la emoción y la energía del espectáculo en un ambiente festivo y animado.",
+    shortDescription: "Ir a un concierto en vivo es una cita emocionante. Disfruta de música en directo, canta y baila mientras compartes la energía y el ambiente festivo del espectáculo.",
+    slug: "concierto",
     tags: [
       "Concierto",
       "Música en Vivo",
@@ -650,6 +706,8 @@ export const data = [
     category: "aventura",
     description:
       "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
+    shortDescription: "El bowling es una actividad divertida y competitiva. Disfruta de una tarde o noche de bolos, compitiendo amistosamente en un ambiente relajado mientras compartes risas y buenos momentos.",
+    slug: "bowling",
     tags: [
       "Bowling",
       "Entretenimiento",
@@ -666,6 +724,8 @@ export const data = [
     category: "aventura",
     description:
       "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
+    shortDescription: "El patinaje en hielo es una actividad emocionante y desafiante. Disfruten deslizando juntos por la pista, probando nuevos trucos y compartiendo una experiencia divertida y activa.",
+    slug: "patinaje-en-hielo",
     tags: [
       "Patinaje en Hielo",
       "Deporte",
@@ -682,6 +742,8 @@ export const data = [
     category: "aventura",
     description:
       "El karting es una actividad emocionante y competitiva que les permite disfrutar de la velocidad y la adrenalina juntos. Pueden competir en la pista, probar sus habilidades de conducción y ver quién es el más rápido en completar el recorrido.",
+    shortDescription: "El karting es una actividad emocionante y competitiva. Disfruta de la velocidad y la adrenalina mientras compites en la pista y pruebas tus habilidades para ver quién es el más rápido.",
+    slug: "karting",
     tags: [
       "Karting",
       "Velocidad",
@@ -698,6 +760,8 @@ export const data = [
     category: "aventura",
     description:
       "El Escape Room es una actividad emocionante y desafiante donde los participantes deben resolver acertijos y pistas para escapar de una habitación temática en un tiempo limitado. Es una gran oportunidad para trabajar en equipo y disfrutar de una experiencia llena de misterio y diversión.",
+    shortDescription: "El Escape Room es una actividad desafiante y llena de misterio. Resuelve acertijos y pistas en un tiempo limitado, trabajando en equipo para escapar de una experiencia inmersiva y divertida.",
+    slug: "escape-room",
     tags: [
       "Escape Room",
       "Aventura",

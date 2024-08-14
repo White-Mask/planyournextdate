@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
   title="Plan Your Next Date - Actividades en Santiago"
-  description="En Plan Your Next Date, explora las mejores actividades románticas para parejas y emocionantes planes para amigos en Santiago, Chile. Encuentra ideas para citas, escapadas, y experiencias únicas en la ciudad."
+  description="Explora las mejores actividades románticas para parejas y planes para amigos en Santiago, Chile. Encuentra ideas únicas para citas y escapadas."
 >
   <section
     class="max-w-[1024px] w-[95%] h-full p-5 bg-[#f5ebd9] rounded-lg my-8"
@@ -316,7 +316,7 @@ import Layout from "../layouts/Layout.astro";
           </p>`
             : "" /*'Sin duración'*/
         }
-        <a href="/${randomItem.category}/${randomItem.name.toLowerCase().replace(/ /g, "-").normalize("NFD").replace(/[\u0300-\u036f]/g, "")}" class="text-blue-600 hover:text-blue-800">Leer más</a>
+        <a href="/${randomItem.category}/${randomItem.slug}" class="text-blue-600 hover:text-blue-800">Leer más</a>
     `;
   }}; 
 </script>

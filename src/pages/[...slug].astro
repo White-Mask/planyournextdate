@@ -6,15 +6,9 @@ export function getStaticPaths() {
   return data.map((item) => {
     return {
       params: {
-        slug: `${item.category}/${
-          item.name
-            .toLowerCase()
-            .replace(/ /g, "-")
-            .normalize("NFD")
-            .replace(/[\u0300-\u036f]/g, "")
-        }`,
+        slugCompleted: `${item.category}/${item.slug}`,
       },
-      props: { name: item.name, item: item, description: item.description },
+      props: { name: item.name, item: item, description: item.shortDescription },
     };
   });
 }
