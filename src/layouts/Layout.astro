@@ -31,9 +31,10 @@ const { title, description, url = Astro.url  } = Astro.props;
     <meta property="og:locale" content="es_ES" />
 
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={url} />
     <!--
       <meta name="googlebot" content="index, follow" />
-      <link rel="canonical" href={url} />
+      
     -->
     <meta
       name="google-site-verification"
