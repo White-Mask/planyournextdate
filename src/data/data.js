@@ -79,17 +79,13 @@ export const data = [
       },
     ],
   },
-  {
-    name: "Restaurante",
-    image:
-      "https://img.freepik.com/fotos-premium/pareja-enamorada-restaurante-luces-al-fondo_662214-13292.jpg",
-    category: "nocturna",
-    description:
-      "Una cena en un restaurante es una opción clásica para una cita. Pueden elegir un lugar romántico y acogedor, o uno más animado y divertido, según sus gustos. La comida y la bebida siempre son una buena excusa para disfrutar de una velada juntos.",
-    shortDescription: "Disfruta de una cena romántica en un restaurante. Elige entre ambientes acogedores o animados para una velada nocturna llena de gastronomía y momentos especiales.",
-    slug: "restaurante",
-    tags: ["Romántico", "Gastronomía", "Cena", "Nocturno", "Gourmet"],
-  },
+  
+
+
+
+
+
+
   {
     name: "Bar",
     image:
@@ -99,37 +95,36 @@ export const data = [
       "Ir a un bar es una opción relajada y divertida para una cita nocturna. Pueden disfrutar de una copa juntos en un ambiente animado y acogedor, y compartir risas y buenos momentos mientras degustan sus bebidas favoritas.",
     shortDescription: "Disfruta de una salida nocturna relajada en un bar con cócteles. Comparte risas y buenos momentos con amigos en un ambiente acogedor mientras degustan sus bebidas favoritas.",
     slug: "bar",
+    locations: [
+      {
+        name: "Luna Bar",
+        address: "Av Vitacura 130, 7510605 Providencia, Región Metropolitana",
+        website: "https://www.covermanager.com/reserve/module_restaurant/luna-bar-hotel-ac-marriott-santiago-de-chile/spanish",
+        price_range: "Depende del consumo",
+        hours: "Lunes a sábado de 16:00 a 23:00",
+        special_info:
+          "Luna Bar ofrece una amplia selección de cócteles y bebidas, así como una vista panorámica de Santiago desde su terraza en el piso 17.",
+        reservation_required: false,
+      },
+      {
+        name: "Sky Club 23",
+        address: "Alonso de Córdova 6050, Piso 23, 7560812 Las Condes, Región Metropolitana",
+        website: "https://www.covermanager.com/reserve/module_restaurant/skyclub23-santiago/spanish?source=Instagram",
+        price_range: "Depende del consumo",
+        hours: "13:00 a 23:00",
+        special_info:
+          "Sky Club 23 es un bar exclusivo con una vista panorámica de Santiago y una amplia selección de cócteles y bebidas premium.",
+        reservation_required: true,
+      },
+    ],
+    duration: "2-4 horas",
     tags: ["Cócteles", "Bar Nocturno", "Ambiente", "Salidas con Amigos"],
   },
-  {
-    name: "Discoteca",
-    image:
-      "https://madriddiferente.com/wp-content/uploads/2018/05/graf-destacada-770x466.jpg",
-    category: "nocturna",
-    description:
-      "Ir a una discoteca es una opción divertida y animada para una cita nocturna. Pueden bailar juntos, disfrutar de la música y la atmósfera festiva, y compartir la emoción y la energía de la pista de baile en un ambiente vibrante y lleno de vida.",
-    shortDescription: "Vive una noche llena de energía en una discoteca. Disfruta de la música, el baile y la atmósfera vibrante, mientras te sumerges en la vida nocturna con DJ en vivo y eventos especiales.",
-    slug: "discoteca",
-    tags: ["Discoteca", "Música", "Baile", "Vida Nocturna", "DJ", "Eventos"],
-  },
-  {
-    name: "Show de comedia",
-    image:
-      "https://fotos.orepublicano.com.br/uploads/fotos/1614713989_603e94856becc.jpeg",
-    category: "nocturna",
-    description:
-      "Ir a un show de comedia es una opción divertida y entretenida para una cita nocturna. Pueden reír juntos, disfrutar de las actuaciones cómicas y compartir momentos de diversión y buen humor en un ambiente festivo y animado.",
-    shortDescription: "Disfruta de una noche llena de risas en un show de comedia. Relájate y pasa un buen rato con actuaciones cómicas, stand-up y mucho humor en un ambiente festivo y lleno de entretenimiento.",
-    slug: "show-de-comedia",
-    tags: [
-      "Comedia",
-      "Humor",
-      "Stand-Up",
-      "Nocturno",
-      "Diversión",
-      "Entretenimiento",
-    ],
-  },
+  
+
+
+
+
   {
     name: "Cine",
     image:
@@ -209,80 +204,8 @@ export const data = [
     ],
   },
   //relajación
-  {
-    name: "Cafetería",
-    image:
-      "https://lacafeteriatalca.cl/wp-content/uploads/2020/08/carrusel1.jpg",
-    category: "desconectar",
-    description:
-      "Tomar un café juntos en una cafetería es una opción sencilla y relajada para una cita. Pueden disfrutar de una conversación tranquila y compartir momentos especiales mientras degustan una deliciosa bebida caliente o fría.",
-    shortDescription: "Disfrutar de un café en una cafetería es una forma simple y relajada de compartir una conversación tranquila, mientras saborean una bebida deliciosa en un ambiente acogedor.",
-    slug: "cafeteria",
-    tags: [
-      "Café",
-      "Cafetería",
-      "Desconectar",
-      "Brunch",
-      "Espacio de Trabajo",
-      "Especialidad",
-    ],
-  },
-  {
-    name: "Heladería",
-    image: "https://mejisa.com/wp-content/uploads/2021/11/heladeria.jpg",
-    category: "desconectar",
-    description:
-      "Ir a una heladería es una opción refrescante y dulce para una cita. Pueden disfrutar de un helado juntos en un ambiente relajado y cómodo, y compartir risas y buenos momentos mientras degustan sabores deliciosos y variados.",
-    shortDescription: "Visitar una heladería es una opción refrescante y deliciosa para una cita. Disfruten de sabores artesanales y variados en un ambiente relajado, perfecto para compartir momentos dulces juntos.",
-    slug: "heladeria",
-    tags: ["Helados", "Heladería", "Postre", "Verano", "Dulce", "Artesanal"],
-  },
-  {
-    name: "Masaje",
-    image: "https://shadhar.cl/wp-content/uploads/2022/11/parejas-4.jpg",
-    category: "desconectar",
-    description:
-      "Recibir un masaje juntos es una opción relajante y reconfortante para una cita. Pueden disfrutar de un masaje relajante, descontracturante o terapéutico, y compartir momentos de bienestar y cuidado personal en un ambiente tranquilo y acogedor.",
-    shortDescription: "Disfruta de una cita relajante con un masaje en pareja. Elige entre opciones terapéuticas o de bienestar en un ambiente acogedor, ideal para compartir momentos de salud y relajación.",
-    slug: "masaje",
-    tags: ["Masajes", "Relajación", "Bienestar", "Spa", "Terapéutico", "Salud"],
-  },
-  {
-    name: "Brunch",
-    image:
-      "https://costa-verde.com/wp-content/uploads/2021/03/1-Brunch-by-Lia-Faria.jpg",
-    category: "desconectar",
-    description:
-      "Disfrutar de un brunch es una excelente opción para una cita relajada y deliciosa. Combina lo mejor del desayuno y el almuerzo con una variedad de opciones de comida, desde platos dulces hasta salados, en un ambiente acogedor y agradable.",
-    shortDescription: "El brunch es una opción deliciosa y relajada para una cita. Disfruta lo mejor del desayuno y el almuerzo, con opciones gourmet y vegetarianas en un ambiente acogedor.",
-    slug: "brunch",
-    tags: [
-      "Brunch",
-      "Desayuno",
-      "Almuerzo",
-      "Gastronomía",
-      "Opciones Vegetarianas",
-      "Gourmet",
-    ],
-  },
-  {
-    name: "Terapia de Flotación",
-    image:
-      "https://finde.latercera.com/wp-content/uploads/2019/02/Float-2-listo-700x450.jpg",
-    category: "desconectar",
-    description:
-      "La Terapia de Flotación es una actividad única que ofrece una experiencia de relajación profunda. Los participantes flotan en una solución de agua salina en un entorno libre de estímulos externos, lo que promueve la meditación, el alivio del estrés y el bienestar general.",
-    shortDescription: "Disfruta de la Terapia de Flotación para una relajación profunda. Flota en agua salina, desconectado de estímulos externos, promoviendo bienestar, alivio del estrés y meditación.",
-    slug: "terapia-de-flotacion",
-    tags: [
-      "Terapia de Flotación",
-      "Relajación",
-      "Bienestar",
-      "Aislamiento Sensorial",
-      "Salud",
-      "Estrés",
-    ],
-  },
+
+
   //casera
   {
     name: "Cocinar",
@@ -389,7 +312,330 @@ export const data = [
       },
     ],
   },
+  //naturaleza
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  //cultura
   {
+    name: "Museo",
+    image:
+      "https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/04/22/60817fe970aa9.jpeg",
+    category: "cultura",
+    description:
+      "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
+    shortDescription: "Visitar un museo es una actividad cultural enriquecedora. Explora exposiciones de arte, historia y ciencia, mientras aprendes y compartes impresiones en un entorno educativo.",
+    slug: "museo",
+    locations: [
+      {
+        name: "Museo Nacional de Bellas Artes",
+        address:
+          "José Miguel de la Barra 650, 8320356 Santiago, Región Metropolitana",
+        website: "https://www.mnba.gob.cl/",
+        price_range: "Entrada gratuita",
+        hours: "Martes a domingo de 10:00 a 18:45",
+        special_info:
+          "Este icónico museo alberga una vasta colección de arte chileno e internacional, con obras que datan desde la época colonial hasta la contemporaneidad. Además de sus exposiciones permanentes, cuenta con una programación constante de exposiciones temporales y actividades educativas.",
+        reservation_required: true,
+      },
+      {
+        name: "Museo Interactivo Mirador (MIM)",
+        address: "Av. Punta Arenas 6711, La Granja, Santiago, Chile",
+        website: "https://www.mim.cl/",
+        price_range: "$4.000 - $6.000 por persona",
+        hours: "Martes a domingo de 9:30 a 18:30",
+        special_info:
+          "El MIM es un museo interactivo diseñado para que niños y adultos exploren la ciencia de manera divertida y educativa. Con más de 300 exhibiciones interactivas, talleres y actividades, es un destino ideal para familias y escuelas.",
+        reservation_required: true,
+      },
+    ],
+    duration: "2-4 horas",
+    faq: [
+      {
+        question: "¿Es necesario reservar entradas con anticipación?",
+        answer:
+          "Para la mayoría de los museos, no es necesario reservar con anticipación, pero se recomienda para visitas en grupo o durante eventos especiales.",
+      },
+      {
+        question: "¿Hay guías disponibles en los museos?",
+        answer:
+          "Sí, muchos museos ofrecen guías y recorridos guiados, algunos de los cuales pueden requerir una reserva previa o un costo adicional.",
+      },
+      {
+        question:
+          "¿Los museos tienen accesibilidad para personas con movilidad reducida?",
+        answer:
+          "La mayoría de los museos están adaptados para personas con movilidad reducida, pero es recomendable verificar las facilidades específicas en cada caso.",
+      },
+    ],
+    tags: ["Museo", "Cultura", "Historia", "Arte", "Educación", "Exposiciones"],
+  },
+  
+
+
+
+
+
+
+  {
+    name: "Teatro",
+    image:
+      "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
+    category: "cultura",
+    description:
+      "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
+    shortDescription: "Ir al teatro es una cita cultural y emocionante. Disfruta de obras, óperas o ballets y comparte momentos de asombro mientras te sumerges en la magia del escenario.",
+    slug: "teatro",
+    locations: [
+      {
+        name: "Teatro Municipal de Santiago",
+        address: "Agustinas 794, 8320229 Santiago, Región Metropolitana",
+        website: "https://municipal.cl/espectaculos/",
+        price_range: "$3.500 - $117.000",
+        hours: "Varía según la programación",
+        special_info:
+          "El Teatro Municipal es uno de los principales escenarios culturales de Chile, con una amplia programación que incluye ópera, ballet, teatro y conciertos. Además de su icónica sala principal, cuenta con otros espacios como la Sala de Cámara y el Teatro Nescafé de las Artes.",
+        reservation_required: true,
+      },
+    ],
+    duration: "2-3 horas",
+    tags: [
+      "Teatro",
+      "Cultura",
+      "Artes Escénicas",
+      "Ópera",
+      "Ballet",
+      "Producciones Contemporáneas",
+    ],
+  },
+
+
+
+
+  
+  //aventura
+  {
+    name: "Bowling",
+    image:
+      "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/06/27/_418137_1_649b3e18a74bc.jpg?d=1200x675",
+    category: "aventura",
+    description:
+      "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
+    shortDescription: "El bowling es una actividad divertida y competitiva. Disfruta de una tarde o noche de bolos, compitiendo amistosamente en un ambiente relajado mientras compartes risas y buenos momentos.",
+    slug: "bowling",
+    locations: [
+      {
+        name: "Bowling - Club Providencia",
+        address: "Av. Pocuro 2878, Providencia, Región Metropolitana",
+        website: "https://clubprovidencia.cl/bowling/",
+        price_range: "$18.000 - $23.000 por 4 personas",
+        hours: "Lunes a domingo de 10:45 a 22:00",
+        special_info:
+          "El Club Providencia ofrece una experiencia de bowling clásica con pistas automatizadas, zapatos de bolos y un ambiente acogedor para disfrutar en familia o con amigos.",
+        reservation_required: true,
+      },
+      {
+        name: "Bowling Happyland",
+        address: "Depende del Happyland",
+        website: "https://www.mallplaza.cl/vespucio/",
+        price_range: "$13.000 - $19.000 por 4 personas",
+        hours: "Lunes a domingo de 11:00 a 18:00",
+        special_info:
+          "El Bowling de Happyland es una opción divertida para disfrutar en familia, con pistas adaptadas para niños y adultos, así como una variedad de juegos y actividades en el mismo recinto.",
+        reservation_required: false,
+      },
+      {
+        name: "Japimax Barrio Universitario",
+        address: "Almte. Latorre 310, 8370174 Santiago, Región Metropolitana",
+        website: "https://www.japimax.cl/",
+        price_range: "$10.000 - $16.000 por 5 personas",
+        hours: "Lunes a domingo de 10:00 a 22:00",
+        special_info:
+          "Japimax es un centro de entretenimiento con bowling, juegos arcade y más, ideal para una tarde o noche de diversión con amigos.",
+        reservation_required: false,
+      }
+    ],
+    duration: "1-2 horas",
+    tags: [
+      "Bowling",
+      "Entretenimiento",
+      "Deporte",
+      "Diversión",
+      "Familia",
+      "Eventos Sociales",
+    ],
+  },
+
+
+
+
+
+
+  
+  {
+    name: "Patinaje en hielo",
+    image:
+      "https://www.cerogrado.cl/wp-content/uploads/2024/07/IMG_7463-scaled.jpg",
+    category: "aventura",
+    description:
+      "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
+    shortDescription: "El patinaje en hielo es una actividad emocionante y desafiante. Disfruten deslizando juntos por la pista, probando nuevos trucos y compartiendo una experiencia divertida y activa.",
+    slug: "patinaje-en-hielo",
+    locations: [
+      {
+        name: "Cerogrado Mall Arauco Maipú",
+        address: "Av. Américo Vespucio 399, 9250000 Maipú, Región Metropolitana",
+        website: "https://www.cerogrado.cl/sucursal-arauco-maipu/",
+        price_range: "$9.000 - $17.000 por persona",
+        hours: "Lunes a domingo de 11:00 a 20:00",
+        special_info:
+          "Ice Park es una pista de hielo artificial ubicada en el Mall Plaza Vespucio, ideal para disfrutar de una tarde de patinaje en un ambiente seguro y divertido.",
+        reservation_required: false,
+      },
+      {
+        name: "Cerogrado Parque Bustamante",
+        address: "Parque Bustamante, Región Metropolitana",
+        website: "https://www.cerogrado.cl/sucursal-parque-araucano/",
+        price_range: "$9.000 - $17.000 por persona",
+        hours: "Lunes a domingo de 10:00 a 20:00",
+        special_info:
+          "Ice Park es una pista de hielo artificial ubicada en el Mall Plaza Vespucio, ideal para disfrutar de una tarde de patinaje en un ambiente seguro y divertido.",
+        reservation_required: false,
+      },
+      {
+        name: "Cerogrado Parque Araucano",
+        address: "Pdte. Riesco 5620, Las Condes, Región Metropolitana",
+        website: "https://www.cerogrado.cl/sucursal-parque-araucano/",
+        price_range: "$9.000 - $17.000 por persona",
+        hours: "Lunes a domingo de 10:00 a 20:00",
+        special_info:
+          "Ice Park es una pista de hielo artificial ubicada en el Mall Plaza Vespucio, ideal para disfrutar de una tarde de patinaje en un ambiente seguro y divertido.",
+        reservation_required: false,
+      },
+    ],
+    duration: "1-2 horas",
+    tags: [
+      "Patinaje en Hielo",
+      "Deporte",
+      "Entretenimiento",
+      "Diversión",
+      "Actividad Física",
+      "Invierno",
+    ],
+  },
+];
+
+
+/*
+{
+    name: "Restaurante",
+    image:
+      "https://img.freepik.com/fotos-premium/pareja-enamorada-restaurante-luces-al-fondo_662214-13292.jpg",
+    category: "nocturna",
+    description:
+      "Una cena en un restaurante es una opción clásica para una cita. Pueden elegir un lugar romántico y acogedor, o uno más animado y divertido, según sus gustos. La comida y la bebida siempre son una buena excusa para disfrutar de una velada juntos.",
+    shortDescription: "Disfruta de una cena romántica en un restaurante. Elige entre ambientes acogedores o animados para una velada nocturna llena de gastronomía y momentos especiales.",
+    slug: "restaurante",
+    tags: ["Romántico", "Gastronomía", "Cena", "Nocturno", "Gourmet"],
+  },
+
+
+{
+    name: "Discoteca",
+    image:
+      "https://madriddiferente.com/wp-content/uploads/2018/05/graf-destacada-770x466.jpg",
+    category: "nocturna",
+    description:
+      "Ir a una discoteca es una opción divertida y animada para una cita nocturna. Pueden bailar juntos, disfrutar de la música y la atmósfera festiva, y compartir la emoción y la energía de la pista de baile en un ambiente vibrante y lleno de vida.",
+    shortDescription: "Vive una noche llena de energía en una discoteca. Disfruta de la música, el baile y la atmósfera vibrante, mientras te sumerges en la vida nocturna con DJ en vivo y eventos especiales.",
+    slug: "discoteca",
+    tags: ["Discoteca", "Música", "Baile", "Vida Nocturna", "DJ", "Eventos"],
+  },
+  {
+    name: "Show de comedia",
+    image:
+      "https://fotos.orepublicano.com.br/uploads/fotos/1614713989_603e94856becc.jpeg",
+    category: "nocturna",
+    description:
+      "Ir a un show de comedia es una opción divertida y entretenida para una cita nocturna. Pueden reír juntos, disfrutar de las actuaciones cómicas y compartir momentos de diversión y buen humor en un ambiente festivo y animado.",
+    shortDescription: "Disfruta de una noche llena de risas en un show de comedia. Relájate y pasa un buen rato con actuaciones cómicas, stand-up y mucho humor en un ambiente festivo y lleno de entretenimiento.",
+    slug: "show-de-comedia",
+    tags: [
+      "Comedia",
+      "Humor",
+      "Stand-Up",
+      "Nocturno",
+      "Diversión",
+      "Entretenimiento",
+    ],
+  },
+
+
+
+  {
+    name: "Cafetería",
+    image:
+      "https://lacafeteriatalca.cl/wp-content/uploads/2020/08/carrusel1.jpg",
+    category: "desconectar",
+    description:
+      "Tomar un café juntos en una cafetería es una opción sencilla y relajada para una cita. Pueden disfrutar de una conversación tranquila y compartir momentos especiales mientras degustan una deliciosa bebida caliente o fría.",
+    shortDescription: "Disfrutar de un café en una cafetería es una forma simple y relajada de compartir una conversación tranquila, mientras saborean una bebida deliciosa en un ambiente acogedor.",
+    slug: "cafeteria",
+    tags: [
+      "Café",
+      "Cafetería",
+      "Desconectar",
+      "Brunch",
+      "Espacio de Trabajo",
+      "Especialidad",
+    ],
+  },
+  {
+    name: "Masaje",
+    image: "https://shadhar.cl/wp-content/uploads/2022/11/parejas-4.jpg",
+    category: "desconectar",
+    description:
+      "Recibir un masaje juntos es una opción relajante y reconfortante para una cita. Pueden disfrutar de un masaje relajante, descontracturante o terapéutico, y compartir momentos de bienestar y cuidado personal en un ambiente tranquilo y acogedor.",
+    shortDescription: "Disfruta de una cita relajante con un masaje en pareja. Elige entre opciones terapéuticas o de bienestar en un ambiente acogedor, ideal para compartir momentos de salud y relajación.",
+    slug: "masaje",
+    tags: ["Masajes", "Relajación", "Bienestar", "Spa", "Terapéutico", "Salud"],
+  },
+  {
+    name: "Brunch",
+    image:
+      "https://costa-verde.com/wp-content/uploads/2021/03/1-Brunch-by-Lia-Faria.jpg",
+    category: "desconectar",
+    description:
+      "Disfrutar de un brunch es una excelente opción para una cita relajada y deliciosa. Combina lo mejor del desayuno y el almuerzo con una variedad de opciones de comida, desde platos dulces hasta salados, en un ambiente acogedor y agradable.",
+    shortDescription: "El brunch es una opción deliciosa y relajada para una cita. Disfruta lo mejor del desayuno y el almuerzo, con opciones gourmet y vegetarianas en un ambiente acogedor.",
+    slug: "brunch",
+    tags: [
+      "Brunch",
+      "Desayuno",
+      "Almuerzo",
+      "Gastronomía",
+      "Opciones Vegetarianas",
+      "Gourmet",
+    ],
+  },
+
+
+{
     name: "Juegos de mesa",
     image:
       "https://www.educaciontrespuntocero.com/wp-content/uploads/2023/07/destacada-juegos-860x574.jpg",
@@ -425,7 +671,9 @@ export const data = [
       "Cine en Casa",
     ],
   },
-  //naturaleza
+
+
+
   {
     name: "Picnic",
     image:
@@ -479,88 +727,11 @@ export const data = [
       "Familia",
     ],
   },
-  {
-    name: "Zoológico",
-    image:
-      "https://finde.latercera.com/wp-content/uploads/2020/09/Zologico-ok-ok.jpg",
-    category: "naturaleza",
-    description:
-      "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
-    shortDescription: "Visitar un zoológico es una opción educativa y divertida para una cita. Exploren áreas llenas de fauna, aprendan sobre los animales y disfruten de la naturaleza en compañía.",
-    slug: "zoologico",
-    tags: ["Fauna", "Educativo", "Familiar"],
-  },
-  {
-    name: "Baño termal o tinaja",
-    image:
-      "https://sdlodge.cl/wp-content/uploads/2023/05/TINAJAS-EDITADO-1024x874.jpg",
-    category: "naturaleza",
-    description:
-      "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
-    shortDescription: "Disfruta de un baño termal en pareja, una opción relajante y terapéutica. Sumérgete en aguas termales o una tinaja al aire libre, rodeado de naturaleza y bienestar.",
-    slug: "bano-termal-o-tinaja",
-    tags: [
-      "Baños Termales",
-      "Tinaja",
-      "Relajación",
-      "Bienestar",
-      "Naturaleza",
-      "Spa",
-    ],
-  },
-  //cultura
-  {
-    name: "Museo",
-    image:
-      "https://www.lavanguardia.com/files/article_main_microformat/uploads/2021/04/22/60817fe970aa9.jpeg",
-    category: "cultura",
-    description:
-      "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
-    shortDescription: "Visitar un museo es una actividad cultural enriquecedora. Explora exposiciones de arte, historia y ciencia, mientras aprendes y compartes impresiones en un entorno educativo.",
-    slug: "museo",
-    locations: [
-      {
-        name: "Museo Nacional de Bellas Artes",
-        address:
-          "José Miguel de la Barra 650, 8320356 Santiago, Región Metropolitana",
-        website: "https://www.mnba.gob.cl/",
-        price_range: "Entrada gratuita",
-        hours: "Martes a domingo de 10:00 a 18:45",
-        special_info:
-          "Este icónico museo alberga una vasta colección de arte chileno e internacional, con obras que datan desde la época colonial hasta la contemporaneidad. Además de sus exposiciones permanentes, cuenta con una programación constante de exposiciones temporales y actividades educativas.",
-        reservation_required: true,
-      },
-      {
-        name: "Museo Interactivo Mirador (MIM)",
-        address: "Av. Punta Arenas 6711, La Granja, Santiago, Chile",
-        website: "https://www.mim.cl/",
-        price_range: "$4.000 - $6.000 por persona",
-        hours: "Martes a domingo de 9:30 a 18:30",
-        special_info:
-          "El MIM es un museo interactivo diseñado para que niños y adultos exploren la ciencia de manera divertida y educativa. Con más de 300 exhibiciones interactivas, talleres y actividades, es un destino ideal para familias y escuelas.",
-        reservation_required: true,
-      },
-    ],
-    faq: [
-      {
-        question: "¿Es necesario reservar entradas con anticipación?",
-        answer:
-          "Para la mayoría de los museos, no es necesario reservar con anticipación, pero se recomienda para visitas en grupo o durante eventos especiales.",
-      },
-      {
-        question: "¿Hay guías disponibles en los museos?",
-        answer:
-          "Sí, muchos museos ofrecen guías y recorridos guiados, algunos de los cuales pueden requerir una reserva previa o un costo adicional.",
-      },
-      {
-        question:
-          "¿Los museos tienen accesibilidad para personas con movilidad reducida?",
-        answer:
-          "La mayoría de los museos están adaptados para personas con movilidad reducida, pero es recomendable verificar las facilidades específicas en cada caso.",
-      },
-    ],
-    tags: ["Museo", "Cultura", "Historia", "Arte", "Educación", "Exposiciones"],
-  },
+
+
+
+
+
   {
     name: "Taller de pintura",
     image:
@@ -581,42 +752,6 @@ export const data = [
     ],
   },
   {
-    name: "Teatro",
-    image:
-      "https://offloadmedia.feverup.com/santiagosecreto.com/wp-content/uploads/2023/08/08103114/5-2.png",
-    category: "cultura",
-    description:
-      "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
-    shortDescription: "Ir al teatro es una cita cultural y emocionante. Disfruta de obras, óperas o ballets y comparte momentos de asombro mientras te sumerges en la magia del escenario.",
-    slug: "teatro",
-    tags: [
-      "Teatro",
-      "Cultura",
-      "Artes Escénicas",
-      "Ópera",
-      "Ballet",
-      "Producciones Contemporáneas",
-    ],
-  },
-  {
-    name: "Planetario",
-    image:
-      "https://planetariochile.cl/wp-content/uploads/2024/06/Planetario-USACH-04.png",
-    category: "cultura",
-    description:
-      "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
-    shortDescription: "Visitar un planetario es una cita educativa y fascinante. Exploren el universo, aprendan sobre estrellas y planetas, y disfruten de una proyección estelar en un entorno acogedor.",
-    slug: "planetario",
-    tags: [
-      "Planetario",
-      "Astronomía",
-      "Educación",
-      "Espacio",
-      "Proyección de Estrellas",
-      "Ciencia",
-    ],
-  },
-  {
     name: "Tour de Vinos",
     image:
       "https://rutadelvinocurico.cl/wp-content/uploads/2021/07/brindis-MT.jpg",
@@ -634,7 +769,8 @@ export const data = [
       "Cultura Vitivinícola",
     ],
   },
-  //aventura
+  
+  
   {
     name: "Parque de atracciones",
     image:
@@ -664,6 +800,12 @@ export const data = [
     slug: "playzone",
     tags: ["Happyland", "Entretenimiento", "Juegos Interactivos", "Arcade"],
   },
+  
+
+  
+
+
+
   {
     name: "Camas Elásticas",
     image: "https://coneypark.cl/wp-content/uploads/2022/03/jump-4.jpg",
@@ -699,43 +841,8 @@ export const data = [
       "Acústica",
     ],
   },
-  {
-    name: "Bowling",
-    image:
-      "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/06/27/_418137_1_649b3e18a74bc.jpg?d=1200x675",
-    category: "aventura",
-    description:
-      "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
-    shortDescription: "El bowling es una actividad divertida y competitiva. Disfruta de una tarde o noche de bolos, compitiendo amistosamente en un ambiente relajado mientras compartes risas y buenos momentos.",
-    slug: "bowling",
-    tags: [
-      "Bowling",
-      "Entretenimiento",
-      "Deporte",
-      "Diversión",
-      "Familia",
-      "Eventos Sociales",
-    ],
-  },
-  {
-    name: "Patinaje en hielo",
-    image:
-      "https://www.cerogrado.cl/wp-content/uploads/2024/07/IMG_7463-scaled.jpg",
-    category: "aventura",
-    description:
-      "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
-    shortDescription: "El patinaje en hielo es una actividad emocionante y desafiante. Disfruten deslizando juntos por la pista, probando nuevos trucos y compartiendo una experiencia divertida y activa.",
-    slug: "patinaje-en-hielo",
-    tags: [
-      "Patinaje en Hielo",
-      "Deporte",
-      "Entretenimiento",
-      "Diversión",
-      "Actividad Física",
-      "Invierno",
-    ],
-  },
-  {
+  
+{
     name: "Karting",
     image:
       "https://images2-mega.cdn.mdstrm.com/meganoticias/2023/07/14/419844_2_64b1ac83b0055.jpg",
@@ -771,4 +878,90 @@ export const data = [
       "Experiencia Inmersiva",
     ],
   },
-];
+
+  {
+    name: "Baño termal o tinaja",
+    image:
+      "https://sdlodge.cl/wp-content/uploads/2023/05/TINAJAS-EDITADO-1024x874.jpg",
+    category: "naturaleza",
+    description:
+      "Tomar un baño termal juntos es una opción relajante y terapéutica para una cita. Pueden sumergirse en aguas termales calientes o disfrutar de una tinaja de madera al aire libre, y compartir momentos de relajación y bienestar en un entorno natural y tranquilo.",
+    shortDescription: "Disfruta de un baño termal en pareja, una opción relajante y terapéutica. Sumérgete en aguas termales o una tinaja al aire libre, rodeado de naturaleza y bienestar.",
+    slug: "bano-termal-o-tinaja",
+    tags: [
+      "Baños Termales",
+      "Tinaja",
+      "Relajación",
+      "Bienestar",
+      "Naturaleza",
+      "Spa",
+    ],
+  },
+
+
+  {
+    name: "Heladería",
+    image: "https://mejisa.com/wp-content/uploads/2021/11/heladeria.jpg",
+    category: "desconectar",
+    description:
+      "Ir a una heladería es una opción refrescante y dulce para una cita. Pueden disfrutar de un helado juntos en un ambiente relajado y cómodo, y compartir risas y buenos momentos mientras degustan sabores deliciosos y variados.",
+    shortDescription: "Visitar una heladería es una opción refrescante y deliciosa para una cita. Disfruten de sabores artesanales y variados en un ambiente relajado, perfecto para compartir momentos dulces juntos.",
+    slug: "heladeria",
+    tags: ["Helados", "Heladería", "Postre", "Verano", "Dulce", "Artesanal"],
+  },
+
+
+
+  {
+    name: "Terapia de Flotación",
+    image:
+      "https://finde.latercera.com/wp-content/uploads/2019/02/Float-2-listo-700x450.jpg",
+    category: "desconectar",
+    description:
+      "La Terapia de Flotación es una actividad única que ofrece una experiencia de relajación profunda. Los participantes flotan en una solución de agua salina en un entorno libre de estímulos externos, lo que promueve la meditación, el alivio del estrés y el bienestar general.",
+    shortDescription: "Disfruta de la Terapia de Flotación para una relajación profunda. Flota en agua salina, desconectado de estímulos externos, promoviendo bienestar, alivio del estrés y meditación.",
+    slug: "terapia-de-flotacion",
+    tags: [
+      "Terapia de Flotación",
+      "Relajación",
+      "Bienestar",
+      "Aislamiento Sensorial",
+      "Salud",
+      "Estrés",
+    ],
+  },
+
+
+
+
+    {
+    name: "Planetario",
+    image:
+      "https://planetariochile.cl/wp-content/uploads/2024/06/Planetario-USACH-04.png",
+    category: "cultura",
+    description:
+      "Visitar un planetario es una opción educativa y fascinante para una cita. Pueden explorar el universo, aprender sobre las estrellas y los planetas, y compartir momentos de asombro y admiración mientras observan el cielo estrellado en un ambiente cómodo y acogedor.",
+    shortDescription: "Visitar un planetario es una cita educativa y fascinante. Exploren el universo, aprendan sobre estrellas y planetas, y disfruten de una proyección estelar en un entorno acogedor.",
+    slug: "planetario",
+    tags: [
+      "Planetario",
+      "Astronomía",
+      "Educación",
+      "Espacio",
+      "Proyección de Estrellas",
+      "Ciencia",
+    ],
+  },
+
+  {
+    name: "Zoológico",
+    image:
+      "https://finde.latercera.com/wp-content/uploads/2020/09/Zologico-ok-ok.jpg",
+    category: "naturaleza",
+    description:
+      "Visitar un zoológico es una opción divertida y educativa para una cita. Pueden explorar las diferentes áreas del zoológico, observar a los animales y aprender más sobre su hábitat y comportamiento, y compartir momentos especiales mientras disfrutan de la compañía mutua y la naturaleza.",
+    shortDescription: "Visitar un zoológico es una opción educativa y divertida para una cita. Exploren áreas llenas de fauna, aprendan sobre los animales y disfruten de la naturaleza en compañía.",
+    slug: "zoologico",
+    tags: ["Fauna", "Educativo", "Familiar"],
+  },
+  */
