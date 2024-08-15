@@ -54,7 +54,7 @@ const randomItem = data[Math.floor(Math.random() * data.length)];
   import { data } from "../data/data.js";
 
   const randomizeBtn = document.getElementById("randomize-btn");
-  const cardContainer = document.getElementById("card-container");
+  const cardContainer: any = document.getElementById("card-container");
 
   const filterData = (data: any[]) => {
     const checkboxes = document.querySelectorAll('input[type="checkbox"]');
