@@ -7,7 +7,7 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un club de jazz es una opción elegante y sofisticada para una cita nocturna. Pueden disfrutar de la música en vivo, la atmósfera íntima y acogedora, y compartir momentos especiales mientras se dejan llevar por los ritmos suaves y envolventes del jazz.",
-    shortDescription: "Vive una noche especial en un club de jazz. Disfruta de música en vivo y un ambiente acogedor, ideal para una cita especial en Santiago de Chile.",
+    shortDescription: "Disfruta de una velada mágica en un club de jazz en Santiago de Chile. Música en vivo, ambiente íntimo y momentos inolvidables para una cita especial.",
     slug: "jazz-club",
     locations: [
       {
@@ -93,7 +93,7 @@ export const data = [
     category: "nocturna",
     description:
       "Ir a un bar es una opción relajada y divertida para una cita nocturna. Pueden disfrutar de una copa juntos en un ambiente animado y acogedor, y compartir risas y buenos momentos mientras degustan sus bebidas favoritas.",
-    shortDescription: "Disfruta de una salida nocturna relajada en un bar con cócteles. Comparte risas y buenos momentos con amigos en un ambiente acogedor mientras degustan sus bebidas favoritas.",
+    shortDescription: "Disfruta de una salida nocturna en un bar con cócteles en Santiago de Chile. Comparte risas y momentos especiales en un ambiente acogedor con tus amigos.",
     slug: "bar",
     locations: [
       {
@@ -132,7 +132,7 @@ export const data = [
     category: "nocturna",
     description:
       "Ir al cine es una opción clásica para una cita porque les permite disfrutar de una película juntos en un ambiente relajado y cómodo. Pueden elegir una película que les guste a ambos, compartir palomitas y refrescos, y disfrutar de una velada entretenida y divertida.",
-    shortDescription: "Una visita al cine es una opción clásica para una cita. Disfruten juntos de una película en un ambiente cómodo y relajado, compartiendo palomitas y momentos especiales.",
+    shortDescription: "Una visita al cine en Santiago de Chile es ideal para una cita. Disfruten de una película en un ambiente cómodo y compartan palomitas y momentos especiales.",
     slug: "cine",
     duration: "2-3 horas",
     recommended_gear: "Ropa casual",
@@ -214,7 +214,7 @@ export const data = [
     category: "casera",
     description:
       "Cocinar juntos es una actividad divertida y creativa que les permite trabajar en equipo y compartir un momento especial. Pueden preparar una receta nueva o cocinar su plato favorito, y luego disfrutarlo juntos en un ambiente relajado y cómodo.",
-    shortDescription: "Cocinar juntos es una actividad divertida y colaborativa que permite trabajar en equipo. Disfruta creando nuevas recetas o preparando tus platos favoritos en un ambiente cómodo y relajado.",
+    shortDescription: "Cocinar con amigos o en pareja es una actividad divertida y colaborativa. Crea recetas nuevas o prepara tus platos favoritos en un ambiente cómodo y relajado.",
     slug: "cocinar",
     locations: [
       {
@@ -339,7 +339,7 @@ export const data = [
     category: "cultura",
     description:
       "Visitar un museo es una actividad cultural y enriquecedora que les permite conocer más sobre el arte, la historia y la ciencia juntos. Pueden explorar las exposiciones, aprender cosas nuevas y compartir sus impresiones y opiniones sobre las obras y objetos expuestos.",
-    shortDescription: "Visitar un museo es una actividad cultural enriquecedora. Explora exposiciones de arte, historia y ciencia, mientras aprendes y compartes impresiones en un entorno educativo.",
+    shortDescription: "Visitar un museo en Santiago de Chile es una actividad enriquecedora. Explora exposiciones de arte, historia y ciencia en un entorno educativo e inspirador.",
     slug: "museo",
     locations: [
       {
@@ -399,7 +399,7 @@ export const data = [
     category: "cultura",
     description:
       "Ir al teatro es una opción cultural y enriquecedora para una cita. Pueden disfrutar de una obra de teatro, una comedia musical o una representación artística, y compartir momentos de emoción y asombro mientras se sumergen en la magia del escenario y la interpretación.",
-    shortDescription: "Ir al teatro es una cita cultural y emocionante. Disfruta de obras, óperas o ballets y comparte momentos de asombro mientras te sumerges en la magia del escenario.",
+    shortDescription: "Ir al teatro en Santiago de Chile es una cita cultural y emocionante. Disfruta de obras, óperas o ballets mientras te sumerges en la magia del escenario.",
     slug: "teatro",
     locations: [
       {
@@ -436,7 +436,7 @@ export const data = [
     category: "aventura",
     description:
       "El bowling es una actividad divertida y competitiva que les permite desafiar sus habilidades y competir de manera amistosa. Pueden disfrutar de una tarde o noche de bolos en un ambiente relajado y cómodo, y compartir risas y buenos momentos juntos.",
-    shortDescription: "El bowling es una actividad divertida y competitiva. Disfruta de una tarde o noche de bolos, compitiendo amistosamente en un ambiente relajado mientras compartes risas y buenos momentos.",
+    shortDescription: "El bowling en Santiago de Chile es una actividad divertida y competitiva. Disfruta de dia de bolos en un ambiente relajado, compartiendo buenos momentos.",
     slug: "bowling",
     locations: [
       {
@@ -494,7 +494,7 @@ export const data = [
     category: "aventura",
     description:
       "El patinaje en hielo es una actividad emocionante y desafiante que les permite disfrutar de la compañía mutua mientras se divierten y se ejercitan juntos. Pueden deslizarse por la pista de hielo, probar nuevos trucos y competir de manera amistosa para ver quién es el mejor patinador.",
-    shortDescription: "El patinaje en hielo es una actividad emocionante y desafiante. Disfruten deslizando juntos por la pista, probando nuevos trucos y compartiendo una experiencia divertida y activa.",
+    shortDescription: "El patinaje en hielo en Santiago de Chile es emocionante y desafiante. Deslícense juntos por la pista, probando trucos y compartiendo una experiencia divertida.",
     slug: "patinaje-en-hielo",
     locations: [
       {
