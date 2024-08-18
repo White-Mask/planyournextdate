@@ -19,10 +19,6 @@ const { title, description, image, url = Astro.url  } = Astro.props;
       content="actividades para parejas en Santiago, citas románticas Santiago, planes románticos Chile, escapadas románticas Santiago, experiencias únicas Chile, diversión con amigos Santiago, ideas para citas Santiago, Plan Your Next Date Santiago, Plan Your Next Date Chile, Plan Your Next Date"
     />
 
-    <meta
-      property="og:image"
-      content="https://planyournextdate.xyz/favicon/favicon-32x32.png"
-    />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={url} />
@@ -30,6 +26,7 @@ const { title, description, image, url = Astro.url  } = Astro.props;
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
     <meta property="og:image" content={image} />
+    <meta property="og:logo" content="https://planyournextdate.xyz/favicon/favicon-32x32.png" />
 
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={url} />
