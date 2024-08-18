@@ -3,7 +3,7 @@ import Footer from "../components/Footer.astro";
 import "@fontsource-variable/montserrat";
 
 
-const { title, description, url = Astro.url  } = Astro.props;
+const { title, description, image, url = Astro.url  } = Astro.props;
 ---
 
 <!doctype html>
@@ -29,6 +29,7 @@ const { title, description, url = Astro.url  } = Astro.props;
     <meta property="og:site_name" content="Plan Your Next Date" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="es_ES" />
+    <meta property="og:image" content={image} />
 
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href={url} />
