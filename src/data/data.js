@@ -109,11 +109,31 @@ export const data = [
       {
         name: "Sky Club 23",
         address: "Alonso de Córdova 6050, Piso 23, 7560812 Las Condes, Región Metropolitana",
-        website: "https://www.covermanager.com/reserve/module_restaurant/skyclub23-santiago/spanish?source=Instagram",
+        website: "https://www.covermanager.com/reserve/module_restaurant/skyclub23-santiago/spanish",
         price_range: "Depende del consumo",
         hours: "13:00 a 23:00",
         special_info:
           "Sky Club 23 es un bar exclusivo con una vista panorámica de Santiago y una amplia selección de cócteles y bebidas premium.",
+        reservation_required: true,
+      },
+      {
+        name: "Red2One",
+        address: "Isidora Goyenechea 3000, 7550653 Las Condes, Región Metropolitana",
+        website: "https://www.covermanager.com/reserve/module_restaurant/red2one/spanish",
+        price_range: "Depende del consumo",
+        hours: "18:00 a 23:00",
+        special_info:
+          "Red2one es un bar exclusivo con una vista panorámica de Santiago y una amplia selección de cócteles y bebidas premium.",
+        reservation_required: true,
+      },
+      {
+        name: "Oculto",
+        address: "Gral. Salvo 38, 7500 669, 7500669 Providencia, Región Metropolitana",
+        website: "https://www.covermanager.com/reserve/module_restaurant/OCULTO-BEERGARDEN-PROVIDENCIA/spanish",
+        price_range: "Depende del consumo",
+        hours: "13:00 a 23:00",
+        special_info:
+          "Oculto restobar de Santiago y una amplia selección de cócteles y bebidas premium.",
         reservation_required: true,
       },
     ],
